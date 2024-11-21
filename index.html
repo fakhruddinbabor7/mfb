@@ -13,45 +13,10 @@
             background-color: #f9f9f9;
             color: #333;
             line-height: 1.6;
-            display: flex;
-            min-height: 100vh;
-        }
-
-        /* Side navigation styles */
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 220px;
-            height: 100%;
-            background: #4d47a3;
-            padding-top: 2rem;
-            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-        }
-
-        nav a {
-            display: block;
-            color: #fff;
-            text-decoration: none;
-            padding: 1rem 1.5rem;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #ffe28a;
-        }
-
-        /* Content styles */
-        .content {
-            margin-left: 240px;
-            width: 100%;
-            padding: 2rem;
         }
 
         header {
-            background: linear-gradient(135deg, #6b63ff, #4d47a3);
+            background: linear-gradient(135deg, #d32f2f, #b71c1c); /* Crimson red */
             color: #fff;
             padding: 1rem 0;
             text-align: center;
@@ -68,6 +33,26 @@
             opacity: 0.9;
         }
 
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            background: #b71c1c; /* Crimson red */
+            padding: 0.8rem 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffe28a;
+        }
+
         section {
             padding: 2rem;
             margin: 1rem auto;
@@ -78,7 +63,7 @@
         }
 
         section h2 {
-            color: #4d47a3;
+            color: #b71c1c; /* Crimson red */
             margin-bottom: 1rem;
             text-align: center;
             font-size: 1.8rem;
@@ -116,7 +101,7 @@
         }
 
         footer {
-            background: #4d47a3;
+            background: #b71c1c; /* Crimson red */
             color: #fff;
             text-align: center;
             padding: 1rem 0;
@@ -129,7 +114,7 @@
         }
 
         a {
-            color: #4d47a3;
+            color: #b71c1c; /* Crimson red */
             text-decoration: none;
         }
 
@@ -139,19 +124,6 @@
     </style>
 </head>
 
-<body>
-    <!-- Side Navigation -->
-    <nav>
-        <a href="#about">About</a>
-        <a href="#news">News</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
-        <a href="#publications">Publications</a>
-        <a href="#project">Project</a>
-        <a href="#contact">Contact Me</a>
-    </nav>
-
-    
 <body>
     <header>
         <h1>Mohammad Fakhruddin Babar</h1>
@@ -167,9 +139,7 @@
         <a href="#project">Project</a>
         <a href="#contact">Contact Me</a>
     </nav>
-
     
-
     <section id="about">
         <img src="profile.jpg" alt="Profile Picture" class="profile">
         <div class="about-content">
