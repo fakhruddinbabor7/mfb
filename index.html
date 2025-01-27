@@ -1,188 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fakhruddin Babar</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <link rel="icon" href="profile.jpg" type="image/jpg">
-  <style>
-    /* Add your CSS here */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Fakhruddin Babar - Personal Webpage</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
 
-    .welcome-message {
-      display: none;
-      text-align: center;
-      background-color: #f0f8ff;
-      padding: 20px;
-      font-size: 20px;
-    }
+        header {
+            background: linear-gradient(135deg, #d32f2f, #b71c1c); /* Crimson red */
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
 
-    .name-title-section {
-      text-align: center;
-      padding: 20px;
-      background: #f4f4f4;
-    }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
 
-    .name-title-section h1 {
-      font-size: 2.5em;
-      margin: 10px 0;
-    }
+        header p {
+            margin-top: 0.5rem;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
 
-    .name-title-section h2 {
-      font-size: 1.5em;
-      margin: 5px 0;
-      color: #333;
-    }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            background: #b71c1c; /* Crimson red */
+            padding: 0.8rem 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
 
-    .quick-nav ul {
-      display: flex;
-      justify-content: center;
-      list-style: none;
-      background-color: #007acc;
-      margin: 0;
-      padding: 10px 0;
-    }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
 
-    .quick-nav ul li {
-      margin: 0 15px;
-    }
+        nav a:hover {
+            color: #ffe28a;
+        }
 
-    .quick-nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-size: 18px;
-    }
+        section {
+            padding: 2rem;
+            margin: 1rem auto;
+            max-width: 900px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
-    .quick-nav ul li a:hover {
-      text-decoration: underline;
-    }
+        section h2 {
+            color: #b71c1c; /* Crimson red */
+            margin-bottom: 1rem;
+            text-align: center;
+            font-size: 1.8rem;
+        }
 
-    .header-section {
-      display: flex;
-      align-items: center;
-      padding: 20px;
-      background: #e8f5e9;
-    }
+        .profile {
+            max-width: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 1rem;
+        }
 
-    .profile-container {
-      display: flex;
-      align-items: center;
-    }
+        .about-content {
+            text-align: center;
+        }
 
-    .profile {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      margin-right: 20px;
-    }
+        .contact img {
+            width: 40px;
+            height: 40px;
+            margin: 0 10px;
+            transition: transform 0.3s;
+        }
 
-    .text-content p {
-      font-size: 16px;
-      color: #555;
-    }
+        .contact img:hover {
+            transform: scale(1.2);
+        }
 
-    section {
-      margin: 15px;
-      padding: 15px;
-      background: #f9f9f9;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
 
-    h2 {
-      color: #333;
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
+        ul li {
+            margin: 0.8rem 0;
+        }
 
-    ul {
-      list-style: none;
-      padding: 0;
-    }
+        footer {
+            background: #b71c1c; /* Crimson red */
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
 
-    ul li {
-      margin-bottom: 10px;
-    }
+        footer p {
+            margin: 0;
+        }
 
-    a {
-      color: #007acc;
-      text-decoration: none;
-    }
+        a {
+            color: #b71c1c; /* Crimson red */
+            text-decoration: none;
+        }
 
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .image-gallery {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-    }
-
-    .gallery-image {
-      width: 30%;
-      border-radius: 8px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    }
-  </style>
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
+
 <body>
+    <header>
+        <h1>Mohammad Fakhruddin Babar</h1>
+        <p>PhD Student in Computer Science at Washington State University</p>
+    </header>
 
-<!-- Welcome Message (displayed for 1 second) -->
-<div id="welcome-message" class="welcome-message">
-  <h2>Welcome to My Page!</h2>
-</div>
-
-<!-- Name and Title Section -->
-<div class="name-title-section">
-  <h1>Mohammad Fakhruddin Babar</h1>
-  <h2>PhD Student</h2>
-  <h2>School of Electrical Engineering & Computer Science</h2>
-  <h2>Washington State University, Pullman, WA, USA</h2>
-</div>
-
-<!-- Quick Navigation Menu -->
-<nav class="quick-nav">
-  <ul>
-    <li><a href="#bio-section">Bio</a></li>
-    <li><a href="#news">News</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#publication">Publication</a></li>
-    <li><a href="#research-section">Research Project</a></li>
-    <li><a href="#contact-section">Contact</a></li>
-  </ul>
-</nav>
-
-<!-- Content Sections -->
-<header class="header-section" id="bio-section">
-  <div class="profile-container">
-    <img src="profile.jpg" alt="Profile Picture" class="profile">
-    <div class="text-content">
-      <p>I'm currently pursuing a PhD in Computer Science at Washington State University under the supervision 
+    <nav>
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#publications">Publications</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact Me</a>
+    </nav>
+    
+    <section id="about">
+        <img src="profile.jpg" alt="Profile Picture" class="profile">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p> I'm currently pursuing a PhD in Computer Science at Washington State University under the supervision 
                 of <a href="https://monowarhasan.info/" target="_blank">Dr. Monowar Hasan.</a> I'm broadly working on the field of 
                 cyber-physical system security and deploying Large Language Models in embedded devices. Im working on investigating covert channels and information leakage existence in multi-frame, dual-mode fixed-priority real-time systems,
                 proposing models and statistical analyses to detect and analyze information flow between tasks in traditional real-time systems. Additionally, 
                 I explored deploying LLMs on embedded devices, benchmarking performance across platforms 
                 under varied memory conditions, and analyzing trade-offs in inference time, memory usage, and energy consumption. I did my bachelor's in Electrical
-                and Electronic Engineering from Bangladesh University of Engineering and Technology (BUET) in 2017. After my bachelor's, I have 4.5 years of job experience in the industry. </p>
-    </div>
-  </div>
-</header>
+                and Electronic Engineering from Bangladesh University of Engineering and Technology (BUET) in 2017. After my bachelor's, I have 4.5 years of job experience in the industry. 
+                I love traveling, running, and playing soccer.</p>
+        </div>
+    </section>
 
-<section id="news">
-  <h2>News</h2>
-  <p>
-
-    	    Dec '24: I received the prestigious Alfred Suksdorf Memorial Scholarship from VCEA.<br>
-	    Nov '24: Information Leackage paper got rejected in DATE <br>
+    <section id="news">
+        <h2>News</h2>
+        <p>
             May '24: Our paper on Scheduling DNN inside TrustZone was accepted to ECRTS '24.<br>
             Mar '24: Our paper on Covert Channel was accepted to ISORC '24.<br>
             Feb '24: Our paper on benchmarking NLP models was accepted to ICPE '24.<br>
@@ -191,25 +166,22 @@
             Jan '23: Moved from Wichita State University to Washington State University.<br>
             Jul '22: My first paper was accepted in CPSIoTSec'22.<br>
             Aug '21: Started my PhD journey at Wichita State University.<br>
-    
-  </p>
-</section>
-
-<section id="education">
-  <h2>Education</h2>
-  <p>
-
-	    <strong>Ph.D. in Computer Science</strong><br>
+        </p>
+    </section>
+    <section id="education">
+        <h2>Education</h2>
+        <p>
+            <strong>Ph.D. in Computer Science</strong><br>
             Washington State University | Spring'23 - Ongoing | CGPA 4.00/4.00<br><br>
             <strong>Ph.D. in Computer Science, School of Computing</strong><br>
             Wichita State University | Fall'21- Fall'22 | CGPA 4.00/4.00<br><br>
             <strong>Bachelor of Science in Electrical and Electronics Engineering</strong><br>
             Bangladesh University of Engineering and Technology | 2017CGPA 3.44/4.00<br>
-  </p>
-</section>
+        </p>
+    </section>
 
 <section id="experience">
- <h2>Experience</h2>
+    <h2>Experience</h2>
     <div>
         <h3>Washington State University</h3>
         <p><strong>Research Assistant, Cyber-physical Systems Security Laboratory</strong></p>
@@ -236,11 +208,11 @@
         <p><strong>Technical Management Trainee</strong></p>
         <p>April 2017 - June 2018 | Chittagong, Bangladesh</p>
     </div>
-
 </section>
 
-<section id="publication">
-<h2>Publications</h2>
+    
+    <section id="publications">
+    <h2>Publications</h2>
     <ul>
         <li>
             <strong>1.</strong> M. Babar and M. Hasan, "Real-time scheduling of TrustZone-enabled DNN workloads," 
@@ -248,7 +220,8 @@
         </li>
         <li>
             <strong>2.</strong> M. F. Babar and M. Hasan, "Trusted Deep Neural Execution—A Survey," 
-            in <em>IEEE Access</em>, vol. 11, pp. 45736-45748, 2023, doi:ACCESS.2023.3274190">10.1109/ACCESS.2023.3274190.
+            in <em>IEEE Access</em>, vol. 11, pp. 45736-45748, 2023, doi: 
+            <a href="https://doi.org/10.1109/ACCESS.2023.3274190">10.1109/ACCESS.2023.3274190</a>.
         </li>
         <li>
             <strong>3.</strong> Sarkar, Souvika, Mohammad Fakhruddin Babar, Md Mahadi Hassan, Monowar Hasan, and Shubhra Kanti Karmaker Santu. 
@@ -272,101 +245,59 @@
             accepted at <em>ECRTS'24</em>.
         </li>
     </ul>
-
-</section>
-
-<section id="research-section">
-<h2>Research Experience</h2>
-
-  <!-- Image Gallery -->
-  <div class="image-gallery">
-    <img src="picture1.png" alt="Research Image 1" class="gallery-image">
-    <img src="picture3.png" alt="Research Image 3" class="gallery-image">
-    <img src="picture4.png" alt="Research Image 4" class="gallery-image">
-    <img src="picture5.png" alt="Research Image 5" class="gallery-image">
-  </div>
-
-
-
- 
-  <div>
-    <h3>Real-time Scheduling of DNN Workloads in Secure Enclaves</h3>
-    <ul>
-      <li>Enabling timing guarantees for performing confidential deep inference in latency-critical learning-enabled systems.</li>
-      <li>A new scheduling framework and analytical model to determine the feasibility of deploying a given real-time DNN workload
-          on TrustZone enclaves.</li>
-      <li>A novel task fusion approach to further reduce TEE context-switch overheads while retaining real-time guarantees.</li>
-    </ul>
-  </div>
-  <div>
-    <h3>Exploring Covert Channel/Information Leakage in Real-time Systems</h3>
-    <ul>
-      <li>We propose an analytical model that finds the existence of an algorithmic covert channel for a set of multi-frame tasks.</li>
-      <li>We analyze the problem of information leakage in dual-mode fixed-priority real-time systems.</li>
-      <li>We propose a statistical analysis that allows low-priority tasks to infer execution patterns of a high-priority task.</li>
-    </ul>
-  </div>
-  <div>
-    <h3>Exploring the Feasibility of Deploying LLMs in Embedded Devices and Performance Analysis</h3>
-    <ul>
-      <li>Our study systematically investigates the performance of BERT-based language models on four off-the-shelf embedded platforms
-          (Raspberry Pi, Jetson, UP², and UDOO) with two different memory variants (2 GB and 4 GB RAMs). We analyzed the
-          trade-offs between complexity and accuracy across multiple NLP tasks.</li>
-      <li>We explore the feasibility of deploying complex NLP tasks on embedded systems and analyze them under three metrics:
-          (a) inference time, (b) memory usage, and (c) energy consumption. We developed a lookup table through empirical
-          observations that will be useful for system designers to decide suitable model configurations for the target platform.</li>
-    </ul>
-  </div>
-
 </section>
 
 
-<section id="contact-section">
-  <h2>Contact Information</h2>
-  
-  <!-- Address with Map Symbol -->
-  <div class="address">
-    <i class="fas fa-map-marker-alt address-icon"></i>
+    
+<section id="project">
+    <h2>Research Experience</h2>
     <div>
-      <strong>ETRL 336</strong><br>
-      355 NE Spokane Street<br>
-      Pullman, WA 99164-2920<br>
-      <a href="https://www.google.com/maps?q=355+NE+Spokane+Street,+Pullman,+WA+99164-2920" target="_blank">View on Google Maps</a>
+        <h3>Real-time Scheduling of DNN Workloads in Secure Enclaves</h3>
+        <ul>
+            <li>Enabling timing guarantees for performing confidential deep inference in latency-critical learning-enabled systems.</li>
+            <li>A new scheduling framework and analytical model to determine the feasibility of deploying a given real-time DNN workload
+on TrustZone enclaves.</li>
+            <li>A novel task fusion approach to further reduce TEE context-switch overheads while retaining real-time guarantees.</li>
+        </ul>
     </div>
-  </div>
-
-  <!-- Email with Icon -->
-  <p class="email">
-    <i class="fas fa-envelope email-icon"></i> 
-    <a href="mailto:m.babar@wsu.edu">m.babar@wsu.edu</a>
-  </p>
-
-  <!-- Social Links -->
-  <p>You can find me on:</p>
-  <div class="social-links">
-    <a href="https://www.linkedin.com/in/mohammad-fakhruddin-babar-3b4795ba" target="_blank">
-      <img src="linkedin.png" alt="LinkedIn Logo" class="profile_icon">
-    </a>
-    <a href="https://scholar.google.com/citations?user=bK3U8oMAAAAJ&hl" target="_blank">
-      <img src="googlescholar.png" alt="Google Scholar Logo" class="profile_icon">
-    </a>
-  </div>
+    <div>
+        <h3>Exploring Covert Channel/Information Leakage in Real-time Systems</h3>
+        <ul>
+            <li>We propose an analytical model that finds the existence of an algorithmic covert channel for a set of multi-frame tasks.</li>
+            <li>We analyze the problem of information leakage in dual- mode fixed-priority real-time systems.</li>
+            <li>We propose a statistical analysis that allows low-priority tasks to infer execution patterns of a high-priority task.</li>
+        </ul>
+    </div>
+    <div>
+        <h3>Exploring the feasibility of deploying LLMs in embedded devices and performance analysis</h3>
+        <ul>
+            <li>Our study systematically investigates the performance of BERT-based language models on four off-the-shelf embedded plat-
+forms (Raspberry Pi, Jetson, UP^2, and UDOO) with two different memory variants (2 GB and 4 GB RAMs). We analyzed the
+trade-offs between complexity and accuracy across multiple NLP tasks.</li>
+            <li>We explore the feasibility of deploying complex NLP tasks on embedded systems and analyze them under three metrics: (a)
+inference time, (b) memory usage, and (c) energy consumption. We developed a lookup table through empirical observations
+that will be useful for system designers to decide suitable model configurations for the target platform.</li>
+        </ul>
+    </div>
 </section>
 
 
-	
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: m.babar@wsu.edu</p>
+        <p>You can find me on:</p>
+        <div class="contact">
+            <a href="https://www.linkedin.com/in/mohammad-fakhruddin-babar-3b4795ba" target="_blank">
+                <img src="linkedin.png" alt="LinkedIn Logo"></a>
+            <a href="https://scholar.google.com/citations?user=bK3U8oMAAAAJ&hl" target="_blank">
+                <img src="google scholar.png" alt="Google Scholar Logo"></a>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2025 Mohammad Fakhruddin Babar</p>
+        <p>&copy; 2024 Mohammad Fakhruddin Babar</p>
     </footer>
-
-
-<!-- hitwebcounter Code START -->
-<a href="https://www.hitwebcounter.com" target="_blank">
-<img src="https://hitwebcounter.com/counter/counter.php?page=18687313&style=0005&nbdigits=5&type=page&initCount=0" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a>                                    
-                                    
-                                        
-                                          
-                            
-	
 </body>
+
 </html>
