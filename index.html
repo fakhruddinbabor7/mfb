@@ -1,57 +1,169 @@
-<!DOCTYPE html>
-<html lang="en">
+body {
+  background-image: url('background.png');
+  background-size: cover; /* This will ensure the image covers the entire background */
+  background-position: center center; /* This will center the background image */
+  background-attachment: fixed; /* This makes the background image fixed while scrolling */
+  background-repeat: no-repeat; /* This ensures the background image does not repeat */
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohammad Fakhruddin Babar - Personal Webpage</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-            line-height: 1.6;
-        }
 
-        header {
-            background: linear-gradient(135deg, #d32f2f, #b71c1c); /* Crimson red */
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
 
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
+/* Welcome Message */
+.welcome-message {
+  display: none;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 
-        header p {
-            margin-top: 0.5rem;
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
 
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            background: #b71c1c; /* Crimson red */
-            padding: 0.8rem 0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Increase space between image and text */
+  max-width: 900px; /* Limit width for better readability */
+  margin: 40px auto; /* Center horizontally with vertical spacing */
+  background: #fff; /* White background for contrast */
+  padding: 20px; /* Add padding for inner spacing */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
 
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
+.profile {
+  width: 150px; /* Slightly larger image */
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ddd; /* Optional border for a clean look */
+}
 
-        nav a:hover {
-            color: #ffe28a;
-        }
+.text-content h1 {
+  font-size: 1.8em; /* Larger headline */
+  font-weight: bold; /* Bold styling */
+  margin: 0 0 10px 0; /* Add space below */
+}
+
+.text-content p {
+  font-family: 'Georgia', serif; /* Sophisticated font */
+  line-height: 1.8; /* Increase line spacing */
+  color: #555; /* Softer text color */
+  margin: 0;
+}
+
+/* Name and Title Section */
+.name-title-section {
+  text-align: center;
+  background-color: gray; /* Change to gray */
+  color: white;
+  padding: 20px 0;
+}
+
+.name-title-section h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.name-title-section h2 {
+  margin: 5px 0 0;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+
+
+/* Quick Navigation Menu */
+.quick-nav {
+  background-color: #333;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.quick-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.quick-nav ul li {
+  display: inline;
+}
+
+.quick-nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.quick-nav ul li a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* General Style for Research and Interactive Sections */
+#interactive-section, #comments-section {
+  margin: 20px auto;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left; /* Align content to the left */
+}
+
+/* Section Heading */
+#comments-section h2 {
+  font-size: 1.8rem;
+  color: #007acc;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Individual Comment Card */
+#comments-section .comment {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Comment Title */
+#comments-section .comment h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* List Styling */
+#comments-section .comment ul {
+  list-style-type: disc;
+  margin: 0;
+  padding-left: 20px;
+}
+
+#comments-section .comment ul li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Hover Effect */
+#comments-section .comment:hover {
+  border-color: #007acc;
+  box-shadow: 0 3px 8px rgba(0, 122, 204, 0.2);
+}
+
 
         section {
             padding: 2rem;
@@ -69,95 +181,313 @@
             font-size: 1.8rem;
         }
 
-        .profile {
-            max-width: 150px;
-            border-radius: 50%;
-            display: block;
-            margin: 0 auto 1rem;
-        }
 
-        .about-content {
-            text-align: center;
-        }
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-        .contact img {
-            width: 40px;
-            height: 40px;
-            margin: 0 10px;
-            transition: transform 0.3s;
-        }
+button:hover {
+  background-color: #0056b3;
+}
 
-        .contact img:hover {
-            transform: scale(1.2);
-        }
+input {
+  padding: 10px;
+  width: 80%;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
-        ul {
-            list-style: none;
-            padding: 0;
-        }
 
-        ul li {
-            margin: 0.8rem 0;
-        }
 
-        footer {
-            background: #b71c1c; /* Crimson red */
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
-            font-size: 0.9rem;
-        }
 
-        footer p {
-            margin: 0;
-        }
 
-        a {
-            color: #b71c1c; /* Crimson red */
-            text-decoration: none;
-        }
 
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+/* General Style for Research and Interactive Sections */
+#comments {
+  margin: 20px auto;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left; /* Align content to the left */
+}
+
+
+
+
+
+
+
+/* Style for input field */
+#commentInput {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+
+
+
+
+
+/* Style for button */
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+
+
+
+/* Style for the comments list */
+#commentsList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#commentsList li {
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+
+
+.address {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.address-icon {
+  color: #0077cc;
+  font-size: 24px;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+#contact-section {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.address {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.address-icon {
+  color: #0077cc;
+  font-size: 24px;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.email-icon {
+  color: #0077cc;
+  font-size: 20px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.profile_icon {
+  width: 30px;
+  height: 30px;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Existing CSS content */
+
+/* Add your new styles below */
+
+
+
+
+#research-section {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 15px;
+  justify-items: center;
+  margin-bottom: 40px;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fakhruddin Babar</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="profile.jpg" type="image/jpg">
 </head>
-
 <body>
-    <header>
-        <h1>Mohammad Fakhruddin Babar</h1>
-        <p>PhD Student in Computer Science at Washington State University</p>
-    </header>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#news">News</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
-        <a href="#publications">Publications</a>
-        <a href="#project">Project</a>
-        <a href="#contact">Contact Me</a>
-    </nav>
+
+<!-- Welcome Message (displayed for 1 second) -->
+<div id="welcome-message" class="welcome-message">
+  <h2>Welcome to My Page!</h2>
+</div>
+
+
+
+<!-- Name and Title Section -->
+<div class="name-title-section">
+  <h1>Mohammad Fakhruddin Babar</h1>
+  <h2>PhD Student</h2>
+<h2>School of Electrical Engineering & Computer Science</h2>
+<h2>Washington State University, Pullman, WA, USA</h2>
+
+</div>
+
+
+
+<!-- Quick Navigation Menu -->
+<nav class="quick-nav">
+  <ul>
     
-    <section id="about">
+    <li><a href="#bio-section">Bio</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#experience">Experience</a></li>
+    
+    <li><a href="#publication">Publication</a></li>
+    <li><a href="#research-section">Research Project</a></li>
+    <li><a href="#contact-section">Contact</a></li>
+  </ul>
+</nav>
+
+
+
+<header class="header-section" id="bio-section">
+    <div class="profile-container">
         <img src="profile.jpg" alt="Profile Picture" class="profile">
-        <div class="about-content">
-            <h2>About Me</h2>
-            <p> I'm currently pursuing a PhD in Computer Science at Washington State University under the supervision 
+        <div class="text-content">
+
+            <p>
+                I'm currently pursuing a PhD in Computer Science at Washington State University under the supervision 
                 of <a href="https://monowarhasan.info/" target="_blank">Dr. Monowar Hasan.</a> I'm broadly working on the field of 
                 cyber-physical system security and deploying Large Language Models in embedded devices. Im working on investigating covert channels and information leakage existence in multi-frame, dual-mode fixed-priority real-time systems,
                 proposing models and statistical analyses to detect and analyze information flow between tasks in traditional real-time systems. Additionally, 
                 I explored deploying LLMs on embedded devices, benchmarking performance across platforms 
                 under varied memory conditions, and analyzing trade-offs in inference time, memory usage, and energy consumption. I did my bachelor's in Electrical
                 and Electronic Engineering from Bangladesh University of Engineering and Technology (BUET) in 2017. After my bachelor's, I have 4.5 years of job experience in the industry. 
-                I love traveling, running, and playing soccer.</p>
+                I love traveling, running, and playing soccer.
+            </p>
         </div>
-    </section>
+    </div>
+</header>
 
-    <section id="news">
+
+ 
+
+
+ <main>
+
+
+
+
+<section id="news">
         <h2>News</h2>
         <p>
+	    Dec '24: I received the prestigious Alfred Suksdorf Memorial Scholarship from VCEA.<br>
+	    Nov '24: Information Leackage paper got rejected in DATE <br>
             May '24: Our paper on Scheduling DNN inside TrustZone was accepted to ECRTS '24.<br>
             Mar '24: Our paper on Covert Channel was accepted to ISORC '24.<br>
             Feb '24: Our paper on benchmarking NLP models was accepted to ICPE '24.<br>
@@ -168,7 +498,9 @@
             Aug '21: Started my PhD journey at Wichita State University.<br>
         </p>
     </section>
-    <section id="education">
+
+  <section id="education">
+
         <h2>Education</h2>
         <p>
             <strong>Ph.D. in Computer Science</strong><br>
@@ -178,7 +510,7 @@
             <strong>Bachelor of Science in Electrical and Electronics Engineering</strong><br>
             Bangladesh University of Engineering and Technology | 2017CGPA 3.44/4.00<br>
         </p>
-    </section>
+      </section>
 
 <section id="experience">
     <h2>Experience</h2>
@@ -210,8 +542,8 @@
     </div>
 </section>
 
-    
-    <section id="publications">
+
+<section id="publication">
     <h2>Publications</h2>
     <ul>
         <li>
@@ -220,8 +552,7 @@
         </li>
         <li>
             <strong>2.</strong> M. F. Babar and M. Hasan, "Trusted Deep Neural Execution—A Survey," 
-            in <em>IEEE Access</em>, vol. 11, pp. 45736-45748, 2023, doi: 
-            <a href="https://doi.org/10.1109/ACCESS.2023.3274190">10.1109/ACCESS.2023.3274190</a>.
+            in <em>IEEE Access</em>, vol. 11, pp. 45736-45748, 2023, doi:ACCESS.2023.3274190">10.1109/ACCESS.2023.3274190.
         </li>
         <li>
             <strong>3.</strong> Sarkar, Souvika, Mohammad Fakhruddin Babar, Md Mahadi Hassan, Monowar Hasan, and Shubhra Kanti Karmaker Santu. 
@@ -248,56 +579,111 @@
 </section>
 
 
-    
-<section id="project">
-    <h2>Research Experience</h2>
-    <div>
-        <h3>Real-time Scheduling of DNN Workloads in Secure Enclaves</h3>
-        <ul>
-            <li>Enabling timing guarantees for performing confidential deep inference in latency-critical learning-enabled systems.</li>
-            <li>A new scheduling framework and analytical model to determine the feasibility of deploying a given real-time DNN workload
-on TrustZone enclaves.</li>
-            <li>A novel task fusion approach to further reduce TEE context-switch overheads while retaining real-time guarantees.</li>
-        </ul>
-    </div>
-    <div>
-        <h3>Exploring Covert Channel/Information Leakage in Real-time Systems</h3>
-        <ul>
-            <li>We propose an analytical model that finds the existence of an algorithmic covert channel for a set of multi-frame tasks.</li>
-            <li>We analyze the problem of information leakage in dual- mode fixed-priority real-time systems.</li>
-            <li>We propose a statistical analysis that allows low-priority tasks to infer execution patterns of a high-priority task.</li>
-        </ul>
-    </div>
-    <div>
-        <h3>Exploring the feasibility of deploying LLMs in embedded devices and performance analysis</h3>
-        <ul>
-            <li>Our study systematically investigates the performance of BERT-based language models on four off-the-shelf embedded plat-
-forms (Raspberry Pi, Jetson, UP^2, and UDOO) with two different memory variants (2 GB and 4 GB RAMs). We analyzed the
-trade-offs between complexity and accuracy across multiple NLP tasks.</li>
-            <li>We explore the feasibility of deploying complex NLP tasks on embedded systems and analyze them under three metrics: (a)
-inference time, (b) memory usage, and (c) energy consumption. We developed a lookup table through empirical observations
-that will be useful for system designers to decide suitable model configurations for the target platform.</li>
-        </ul>
-    </div>
+<section id="research-section">
+
+ <h2>Research Experience</h2>
+
+  <!-- Image Gallery -->
+  <div class="image-gallery">
+    <img src="picture1.png" alt="Research Image 1" class="gallery-image">
+    <img src="picture3.png" alt="Research Image 3" class="gallery-image">
+    <img src="picture4.png" alt="Research Image 4" class="gallery-image">
+    <img src="picture5.png" alt="Research Image 5" class="gallery-image">
+  </div>
+
+
+
+ 
+  <div>
+    <h3>Real-time Scheduling of DNN Workloads in Secure Enclaves</h3>
+    <ul>
+      <li>Enabling timing guarantees for performing confidential deep inference in latency-critical learning-enabled systems.</li>
+      <li>A new scheduling framework and analytical model to determine the feasibility of deploying a given real-time DNN workload
+          on TrustZone enclaves.</li>
+      <li>A novel task fusion approach to further reduce TEE context-switch overheads while retaining real-time guarantees.</li>
+    </ul>
+  </div>
+  <div>
+    <h3>Exploring Covert Channel/Information Leakage in Real-time Systems</h3>
+    <ul>
+      <li>We propose an analytical model that finds the existence of an algorithmic covert channel for a set of multi-frame tasks.</li>
+      <li>We analyze the problem of information leakage in dual-mode fixed-priority real-time systems.</li>
+      <li>We propose a statistical analysis that allows low-priority tasks to infer execution patterns of a high-priority task.</li>
+    </ul>
+  </div>
+  <div>
+    <h3>Exploring the Feasibility of Deploying LLMs in Embedded Devices and Performance Analysis</h3>
+    <ul>
+      <li>Our study systematically investigates the performance of BERT-based language models on four off-the-shelf embedded platforms
+          (Raspberry Pi, Jetson, UP², and UDOO) with two different memory variants (2 GB and 4 GB RAMs). We analyzed the
+          trade-offs between complexity and accuracy across multiple NLP tasks.</li>
+      <li>We explore the feasibility of deploying complex NLP tasks on embedded systems and analyze them under three metrics:
+          (a) inference time, (b) memory usage, and (c) energy consumption. We developed a lookup table through empirical
+          observations that will be useful for system designers to decide suitable model configurations for the target platform.</li>
+    </ul>
+  </div>
 </section>
 
 
-    
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: m.babar@wsu.edu</p>
-        <p>You can find me on:</p>
-        <div class="contact">
-            <a href="https://www.linkedin.com/in/mohammad-fakhruddin-babar-3b4795ba" target="_blank">
-                <img src="linkedin.png" alt="LinkedIn Logo"></a>
-            <a href="https://scholar.google.com/citations?user=bK3U8oMAAAAJ&hl" target="_blank">
-                <img src="google scholar.png" alt="Google Scholar Logo"></a>
-        </div>
-    </section>
+
+<section id="contact-section">
+  <h2>Contact Information</h2>
+  
+  <!-- Address with Map Symbol -->
+  <div class="address">
+    <i class="fas fa-map-marker-alt address-icon"></i>
+    <div>
+      <strong>ETRL 336</strong><br>
+      355 NE Spokane Street<br>
+      Pullman, WA 99164-2920<br>
+      <a href="https://www.google.com/maps?q=355+NE+Spokane+Street,+Pullman,+WA+99164-2920" target="_blank">View on Google Maps</a>
+    </div>
+  </div>
+
+  <!-- Email with Icon -->
+  <p class="email">
+    <i class="fas fa-envelope email-icon"></i> 
+    <a href="mailto:m.babar@wsu.edu">m.babar@wsu.edu</a>
+  </p>
+
+  <!-- Social Links -->
+  <p>You can find me on:</p>
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/mohammad-fakhruddin-babar-3b4795ba" target="_blank">
+      <img src="linkedin.png" alt="LinkedIn Logo" class="profile_icon">
+    </a>
+    <a href="https://scholar.google.com/citations?user=bK3U8oMAAAAJ&hl" target="_blank">
+      <img src="googlescholar.png" alt="Google Scholar Logo" class="profile_icon">
+    </a>
+  </div>
+</section>
+
+
+
+
+<div id="comments">
+    <h2>Leave a Comment</h2>
+    <form id="commentForm">
+      <input type="text" id="commentInput" placeholder="Write your comment here" required>
+      <button type="submit">Post Comment</button>
+    </form>
+    <ul id="commentsList"></ul>
+  </div>
+
+
+
+ </main>
+
+
+
+
+
 
     <footer>
-        <p>&copy; 2024 Mohammad Fakhruddin Babar</p>
+        <p>&copy; 2025 Mohammad Fakhruddin Babar</p>
     </footer>
-</body>
 
+
+</body>
+<script src="script.js"></script>
 </html>
