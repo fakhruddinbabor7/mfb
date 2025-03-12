@@ -216,3 +216,166 @@ a:hover {
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 20px;
 }
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fakhruddin Babar</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="profile.jpg" type="image/jpg">
+</head>
+<body>
+
+
+<!-- Welcome Message (displayed for 1 second) -->
+<div id="welcome-message" class="welcome-message">
+  <h2>Welcome to My Page!</h2>
+</div>
+
+
+
+<!-- Name and Title Section -->
+<div class="name-title-section">
+  <h1>Mohammad Fakhruddin Babar</h1>
+  <h2>PhD Student</h2>
+<h2>School of Electrical Engineering & Computer Science</h2>
+<h2>Washington State University, Pullman, WA, USA</h2>
+
+</div>
+
+
+
+<!-- Quick Navigation Menu -->
+<nav class="quick-nav">
+  <ul>
+    
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#bio-section">Bio</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    
+    <li><a href="publication.html">Publication</a></li>
+    <li><a href="research.html">Research Projects</a></li>
+    <li><a href="#contact-section">Contact</a></li>
+  </ul>
+</nav>
+
+
+
+<header class="header-section" id="bio-section">
+    <div class="profile-container">
+        <img src="profile.jpg" alt="Profile Picture" class="profile">
+        <div class="text-content">
+
+            <p>
+                I'm currently pursuing a PhD in Computer Science at Washington State University under the supervision 
+                of <a href="https://monowarhasan.info/" target="_blank">Dr. Monowar Hasan.</a> I'm broadly working on the field of 
+                cyber-physical system security and deploying Large Language Models in embedded devices. Im working on investigating covert channels and information leakage existence in multi-frame, dual-mode fixed-priority real-time systems,
+                proposing models and statistical analyses to detect and analyze information flow between tasks in traditional real-time systems. Additionally, 
+                I explored deploying LLMs on embedded devices, benchmarking performance across platforms 
+                under varied memory conditions, and analyzing trade-offs in inference time, memory usage, and energy consumption. I did my bachelor's in Electrical
+                and Electronic Engineering from Bangladesh University of Engineering and Technology (BUET) in 2017. After my bachelor's, I have 4.5 years of job experience in the industry. 
+                I love traveling, running, and playing soccer.
+            </p>
+        </div>
+    </div>
+</header>
+
+
+ 
+
+
+ <main>
+
+
+
+
+<section id="news">
+    <h2>News</h2>
+    <p>
+        <span class="news-date">Dec '24:</span> I received the prestigious Alfred Suksdorf Memorial Scholarship from VCEA.<br>
+        <span class="news-date">Nov '24:</span> Information Leackage paper got rejected in DATE <br>
+        <span class="news-date">May '24:</span> Our paper on Scheduling DNN inside TrustZone was accepted to ECRTS '24.<br>
+        <span class="news-date">Mar '24:</span> Our paper on Covert Channel was accepted to ISORC '24.<br>
+        <span class="news-date">Feb '24:</span> Our paper on benchmarking NLP models was accepted to ICPE '24.<br>
+        <span class="news-date">Oct '23:</span> Passed my Qual Exam.<br>
+        <span class="news-date">May '23:</span> Published a survey paper on "Trusted Deep Neural Execution".<br>
+        <span class="news-date">Jan '23:</span> Moved from Wichita State University to Washington State University.<br>
+        <span class="news-date">Jul '22:</span> My first paper was accepted in CPSIoTSec'22.<br>
+        <span class="news-date">Aug '21:</span> Started my PhD journey at Wichita State University.<br>
+    </p>
+</section>
+
+
+  
+
+<section id="contact-section">
+  <h2>Contact Information</h2>
+  
+  <!-- Address with Map Symbol -->
+  <div class="address">
+    <i class="fas fa-map-marker-alt address-icon"></i>
+    <div>
+      <strong>ETRL 336</strong><br>
+      355 NE Spokane Street<br>
+      Pullman, WA 99164-2920<br>
+      <a href="https://www.google.com/maps?q=355+NE+Spokane+Street,+Pullman,+WA+99164-2920" target="_blank">View on Google Maps</a>
+    </div>
+  </div>
+
+  <!-- Email with Icon -->
+  <p class="email">
+    <i class="fas fa-envelope email-icon"></i> 
+    <a href="mailto:m.babar@wsu.edu">m.babar@wsu.edu</a>
+  </p>
+
+  <!-- Social Links -->
+  <p>You can find me on:</p>
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/mohammad-fakhruddin-babar-3b4795ba" target="_blank">
+      <img src="linkedin.png" alt="LinkedIn Logo" class="profile_icon">
+    </a>
+    <a href="https://scholar.google.com/citations?user=bK3U8oMAAAAJ&hl" target="_blank">
+      <img src="googlescholar.png" alt="Google Scholar Logo" class="profile_icon">
+    </a>
+  </div>
+</section>
+
+
+
+
+<div id="comments">
+    <h2>Leave a Comment</h2>
+    <form id="commentForm">
+      <input type="text" id="commentInput" placeholder="Write your comment here" required>
+      <button type="submit">Post Comment</button>
+    </form>
+    <ul id="commentsList"></ul>
+  </div>
+
+
+
+ </main>
+
+
+
+
+
+
+    <footer>
+        <p>&copy; 2025 Mohammad Fakhruddin Babar</p>
+    </footer>
+
+
+</body>
+<script src="script.js"></script>
+</html>
+
+
+
