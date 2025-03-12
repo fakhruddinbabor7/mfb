@@ -1,0 +1,189 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="profile.jpg" type="image/jpg">
+</head>
+<body>
+
+<!-- CSS for Image Gallery -->
+<style>
+  .gallery-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      max-width: 600px; /* Adjust width as needed */
+      margin: auto;
+  }
+
+  .image-gallery {
+      position: relative;
+      width: 100%;
+      height: 350px; /* Adjust height as needed */
+      overflow: hidden;
+  }
+
+  .gallery-image {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+  }
+
+  .gallery-image.active {
+      opacity: 1;
+  }
+
+  .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 20px;
+      border-radius: 5px;
+  }
+
+  .prev { left: 10px; }
+  .next { right: 10px; }
+
+  .prev:hover, .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+  }
+</style>
+
+
+<!-- Welcome Message (displayed for 1 second) -->
+<div id="welcome-message" class="welcome-message">
+  <h2>Welcome to My Page!</h2>
+</div>
+
+
+
+<!-- Name and Title Section -->
+<div class="name-title-section">
+  <h1>Mohammad Fakhruddin Babar</h1>
+  <h2>PhD Student</h2>
+<h2>School of Electrical Engineering & Computer Science</h2>
+<h2>Washington State University, Pullman, WA, USA</h2>
+
+</div>
+
+
+
+<!-- Quick Navigation Menu -->
+<nav class="quick-nav">
+  <ul>
+    
+    <li><a href="index.html">Home</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    
+    <li><a href="publication.html">Publication</a></li>
+    <li><a href="research.html">Research Projects</a></li>
+
+  </ul>
+</nav>
+
+
+
+
+
+<section id="research-section">
+
+ <h2>Research Experience</h2>
+
+  <!-- Image Gallery -->
+<!-- Image Gallery -->
+<div class="gallery-container">
+    <button class="prev" onclick="prevImage()">&#10094;</button>
+    
+    <div class="image-gallery">
+        <img src="picture1.png" alt="Research Image 1" class="gallery-image active">
+        <img src="picture3.png" alt="Research Image 3" class="gallery-image">
+        <img src="picture4.png" alt="Research Image 4" class="gallery-image">
+        <img src="picture5.png" alt="Research Image 5" class="gallery-image">
+        <img src="tee_survey.png" alt="Research Image 6" class="gallery-image">
+    </div>
+
+    <button class="next" onclick="nextImage()">&#10095;</button>
+</div>
+
+
+
+
+
+ 
+  <div>
+    <h3>Real-time Scheduling of DNN Workloads in Secure Enclaves</h3>
+    <ul>
+      <li>Enabling timing guarantees for performing confidential deep inference in latency-critical learning-enabled systems.</li>
+      <li>A new scheduling framework and analytical model to determine the feasibility of deploying a given real-time DNN workload
+          on TrustZone enclaves.</li>
+      <li>A novel task fusion approach to further reduce TEE context-switch overheads while retaining real-time guarantees.</li>
+    </ul>
+  </div>
+  <div>
+    <h3>Exploring Covert Channel/Information Leakage in Real-time Systems</h3>
+    <ul>
+      <li>We propose an analytical model that finds the existence of an algorithmic covert channel for a set of multi-frame tasks.</li>
+      <li>We analyze the problem of information leakage in dual-mode fixed-priority real-time systems.</li>
+      <li>We propose a statistical analysis that allows low-priority tasks to infer execution patterns of a high-priority task.</li>
+    </ul>
+  </div>
+  <div>
+    <h3>Exploring the Feasibility of Deploying LLMs in Embedded Devices and Performance Analysis</h3>
+    <ul>
+      <li>Our study systematically investigates the performance of BERT-based language models on four off-the-shelf embedded platforms
+          (Raspberry Pi, Jetson, UP², and UDOO) with two different memory variants (2 GB and 4 GB RAMs). We analyzed the
+          trade-offs between complexity and accuracy across multiple NLP tasks.</li>
+      <li>We explore the feasibility of deploying complex NLP tasks on embedded systems and analyze them under three metrics:
+          (a) inference time, (b) memory usage, and (c) energy consumption. We developed a lookup table through empirical
+          observations that will be useful for system designers to decide suitable model configurations for the target platform.</li>
+    </ul>
+  </div>
+
+
+  <div>
+    <h3>Common vulnerabilities and exposures (CVE) dataset analysis: A collaboration with Pacific Northwest National Laboratory </h3>
+    <ul>
+      <li>Analyzed CVE datasets to identify patterns in vulnerability exploitability using signal processing techniques (e.g., FFT) and clustering methods (e.g., Mahalanobis and Euclidean distances).</li>
+      <li>Investigate co-exploitation behaviors, fragmentation patterns, and exploit density to understand coordinated vulnerability exploitation.</li>
+    </ul>
+  </div>
+
+
+</section>
+
+
+<script>
+  let currentIndex = 0;
+  const images = document.querySelectorAll(".gallery-image");
+
+  function showImage(index) {
+      images.forEach((img, i) => {
+          img.classList.toggle("active", i === index);
+      });
+  }
+
+  function prevImage() {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      showImage(currentIndex);
+  }
+
+  function nextImage() {
+      currentIndex = (currentIndex + 1) % images.length;
+      showImage(currentIndex);
+  }
+</script>
+
