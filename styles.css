@@ -178,7 +178,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .container { width: min(calc(100% - 28px), var(--container)); }
   .section-pad { padding: 72px 0; }
   .hero { padding-top: 66px; }
-  .hero h1 { font-size: clamp(2.8rem, 15vw, 4rem); }
+  .hero h1 { font-size: clamp(2rem, 4.5vw, 4.6rem); }
   .hero-actions .button { width: 100%; }
   .hero-visual { width: calc(100% - 20px); margin-left: 20px; }
   .hero-note { position: relative; left: -10px; bottom: auto; margin-top: -22px; }
@@ -248,11 +248,5 @@ button, a { -webkit-tap-highlight-color: transparent; }
     height: 190px;
   }
 }
-/* Make large headings slightly smaller */
-.hero h1 {
-  font-size: clamp(2.5rem, 5vw, 4.8rem);
-}
 
-.section-heading h2 {
-  font-size: clamp(2rem, 3.8vw, 3.5rem);
-}
+
