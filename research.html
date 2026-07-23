@@ -1,358 +1,472 @@
-    <!doctype html>
-    <html lang="en">
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="theme-color" content="#981e32">
-      <meta name="description" content="Research projects of Mohammad Fakhruddin Babar in real-time systems, cybersecurity, trusted AI, and cyber-physical systems.">
-      <meta name="author" content="Mohammad Fakhruddin Babar">
-      <link rel="canonical" href="https://fakhruddinbabor7.github.io/mfb/research.html">
-      <title>Research | Mohammad Fakhruddin Babar</title>
-      <link rel="icon" href="favicon.png" type="image/png">
-      <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="pages.css">
-    </head>
-    <body>
-    <a class="skip-link" href="#main">Skip to main content</a>
-<header class="site-header" id="top">
-  <div class="nav-wrap container">
-    <a class="brand" href="index.html" aria-label="Mohammad Fakhruddin Babar home">
-      <span class="brand-mark">MFB</span>
-      <span class="brand-name">Mohammad Fakhruddin Babar</span>
-    </a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
-      <span></span><span></span><span></span>
-    </button>
-    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-      <a href="index.html">Home</a>
-  <a href="research.html" aria-current="page" class="active">Research</a>
-  <a href="publications.html">Publications</a>
-  <a href="experience.html">Experience</a>
-  <a href="news.html">News</a>
-  <a href="gallery.html">Gallery</a>
-  <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <main id="main">
-    <!-- Edit research projects in this file. -->
+  <meta name="theme-color" content="#981e32">
+  <meta
+    name="description"
+    content="Research projects of Mohammad Fakhruddin Babar in real-time systems, cybersecurity, trusted AI, and cyber-physical systems."
+  >
+  <meta name="author" content="Mohammad Fakhruddin Babar">
 
-<section class="section-pad">
-  <div class="container">
-    <div class="section-heading centered reveal">
-      <p class="eyebrow">Projects</p>
-      <h2>Research Projects</h2>
-      <p>My research connects real-time systems, cyber-physical systems security, trustworthy AI, covert-channel/ side-channel leakage, 
-          and vulnerability prioritization.</p>
+  <link
+    rel="canonical"
+    href="https://fakhruddinbabor7.github.io/mfb/research.html"
+  >
+
+  <title>Research | Mohammad Fakhruddin Babar</title>
+
+  <link rel="icon" href="favicon.png" type="image/png">
+
+  <!-- Shared website design -->
+  <link rel="stylesheet" href="styles.css?v=50">
+
+  <!-- Research carousel design -->
+  <link rel="stylesheet" href="research-carousel.css?v=50">
+</head>
+
+<body class="research-page">
+
+  <a class="skip-link" href="#main">
+    Skip to main content
+  </a>
+
+  <!-- =========================
+       Header
+       ========================= -->
+  <header class="site-header" id="top">
+    <div class="nav-wrap container">
+
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="Mohammad Fakhruddin Babar home"
+      >
+        <span class="brand-mark">MFB</span>
+        <span class="brand-name">
+          Mohammad Fakhruddin Babar
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        aria-label="Open navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav
+        id="site-nav"
+        class="site-nav"
+        aria-label="Primary navigation"
+      >
+        <a href="index.html">Home</a>
+
+        <a
+          href="research.html"
+          class="active"
+          aria-current="page"
+        >
+          Research
+        </a>
+
+        <a href="publications.html">Publications</a>
+        <a href="experience.html">Experience</a>
+        <a href="news.html">News</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
     </div>
+  </header>
 
- <section class="research-projects">
-  <div class="container">
+  <main id="main">
 
-    
+    <!-- =========================
+         Research introduction
+         ========================= -->
+    <section class="research-intro">
+      <div class="container">
 
-    <div
-      class="research-carousel"
-      data-research-carousel
-      aria-label="Research projects"
-    >
+        <p class="eyebrow">
+          Projects
+        </p>
 
-      <div class="carousel-window">
+        <h1>
+          Research Projects
+        </h1>
 
-        <div class="carousel-track" data-carousel-track>
+        <p class="research-intro-text">
+          My research connects real-time systems, cyber-physical systems
+          security, trustworthy AI, covert-channel and side-channel
+          leakage, and vulnerability prioritization.
+        </p>
 
-          <!-- Project 1 -->
-          <article class="research-slide">
+      </div>
+    </section>
 
-            <div class="carousel-image">
-              <img
-                src="assets/images/deeptrust.jpg"
-                alt="Confidential DNN execution inside Arm TrustZone"
-              >
+    <!-- =========================
+         Project carousel
+         ========================= -->
+    <section class="research-projects">
+      <div class="container">
+
+        <div
+          class="research-carousel"
+          data-research-carousel
+          tabindex="0"
+          aria-label="Research project carousel"
+        >
+
+          <div class="carousel-window">
+
+            <div
+              class="carousel-track"
+              data-carousel-track
+            >
+
+              <!-- =====================
+                   Project 1
+                   ===================== -->
+              <article class="research-slide">
+
+                <!-- 1. Project heading -->
+                <header class="project-heading">
+                  <p class="project-category">
+                    Trusted Execution · Real-Time AI
+                  </p>
+
+                  <h2 class="project-title">
+                    Confidential DNN Execution Inside TrustZone
+                  </h2>
+                </header>
+
+                <!-- 2. Project image -->
+                <div class="carousel-image">
+                  <img
+                    src="assets/images/deeptrust.jpg"
+                    alt="Confidential DNN execution inside Arm TrustZone"
+                  >
+                </div>
+
+                <!-- 3. Project description -->
+                <div class="project-information">
+                  <p class="project-description">
+                    I develop scheduling and task-fusion methods for
+                    executing deep neural network workloads inside Arm
+                    TrustZone while controlling secure-memory requirements,
+                    execution overhead, and real-time constraints.
+                  </p>
+
+                  <div class="project-tags">
+                    <span>Arm TrustZone</span>
+                    <span>Real-Time AI</span>
+                    <span>Scheduling</span>
+                  </div>
+
+                  <a
+                    class="project-link"
+                    href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ECRTS.2024.13"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Read the ECRTS paper →
+                  </a>
+                </div>
+
+              </article>
+
+              <!-- =====================
+                   Project 2
+                   ===================== -->
+              <article class="research-slide">
+
+                <header class="project-heading">
+                  <p class="project-category">
+                    Timing Security · Information Leakage
+                  </p>
+
+                  <h2 class="project-title">
+                    Covert Channels and Information Leakage
+                  </h2>
+                </header>
+
+                <div class="carousel-image">
+                  <img
+                    src="assets/images/project-timing.webp"
+                    alt="Timing-channel security in real-time systems"
+                  >
+                </div>
+
+                <div class="project-information">
+                  <p class="project-description">
+                    I investigate how observable scheduling behavior can
+                    reveal sensitive execution patterns in fixed-priority
+                    real-time systems. This work develops analytical and
+                    statistical techniques for measuring and mitigating
+                    timing leakage.
+                  </p>
+
+                  <div class="project-tags">
+                    <span>Covert Channels</span>
+                    <span>Information Leakage</span>
+                    <span>Fixed Priority</span>
+                  </div>
+
+                  <a
+                    class="project-link"
+                    href="https://ieeexplore.ieee.org/abstract/document/10551375"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Read the ISORC paper →
+                  </a>
+                </div>
+
+              </article>
+
+              <!-- =====================
+                   Project 3
+                   ===================== -->
+              <article class="research-slide">
+
+                <header class="project-heading">
+                  <p class="project-category">
+                    Privacy · Scheduling · Control
+                  </p>
+
+                  <h2 class="project-title">
+                    Privacy-Aware Randomized Scheduling
+                  </h2>
+                </header>
+
+                <div class="carousel-image">
+                  <img
+                    src="assets/images/project-survey.webp"
+                    alt="Privacy-aware randomized scheduling"
+                  >
+                </div>
+
+                <div class="project-information">
+                  <p class="project-description">
+                    I study how differential privacy and schedule
+                    randomization affect attack opportunities, deadline
+                    guarantees, scheduling predictability, and
+                    control-system stability in real-time cyber-physical
+                    systems.
+                  </p>
+
+                  <div class="project-tags">
+                    <span>Differential Privacy</span>
+                    <span>Randomization</span>
+                    <span>Control Stability</span>
+                  </div>
+
+                  <span class="project-status">
+                    EMSOFT 2026 · Accepted
+                  </span>
+                </div>
+
+              </article>
+
+              <!-- =====================
+                   Project 4
+                   ===================== -->
+              <article class="research-slide">
+
+                <header class="project-heading">
+                  <p class="project-category">
+                    Embedded AI · Performance Analysis
+                  </p>
+
+                  <h2 class="project-title">
+                    Language Models on Resource-Limited Devices
+                  </h2>
+                </header>
+
+                <div class="carousel-image">
+                  <img
+                    src="assets/images/project-embedded-ai.webp"
+                    alt="Language models running on embedded devices"
+                  >
+                </div>
+
+                <div class="project-information">
+                  <p class="project-description">
+                    I benchmark modern language models on embedded
+                    computing platforms by evaluating inference latency,
+                    memory use, energy consumption, model size, and
+                    application accuracy.
+                  </p>
+
+                  <div class="project-tags">
+                    <span>Embedded Systems</span>
+                    <span>Natural Language Processing</span>
+                    <span>Performance</span>
+                  </div>
+
+                  <a
+                    class="project-link"
+                    href="https://dl.acm.org/doi/abs/10.1145/3629526.3645054"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Read the ICPE paper →
+                  </a>
+                </div>
+
+              </article>
+
+              <!-- =====================
+                   Project 5
+                   ===================== -->
+              <article class="research-slide">
+
+                <header class="project-heading">
+                  <p class="project-category">
+                    Cyber Defense · Machine Learning
+                  </p>
+
+                  <h2 class="project-title">
+                    Learning-Based Vulnerability Prioritization
+                  </h2>
+                </header>
+
+                <div class="carousel-image">
+                  <img
+                    src="assets/images/project-vulnerability.webp"
+                    alt="Learning-based cyber vulnerability prioritization"
+                  >
+                </div>
+
+                <div class="project-information">
+                  <p class="project-description">
+                    I develop learning-based composite metrics that combine
+                    exploitability, severity, weakness information, threat
+                    intelligence, and semantic signals to help defenders
+                    prioritize CVEs and allocate remediation resources.
+                  </p>
+
+                  <div class="project-tags">
+                    <span>CVSS</span>
+                    <span>EPSS</span>
+                    <span>KEV</span>
+                    <span>Learning to Rank</span>
+                  </div>
+
+                  <span class="project-status">
+                    Ongoing Research
+                  </span>
+                </div>
+
+              </article>
+
             </div>
 
-            <div class="project-information">
+            <!-- Previous arrow -->
+            <button
+              class="carousel-arrow carousel-arrow-left"
+              type="button"
+              data-carousel-previous
+              aria-label="Show previous project"
+            >
+              &#10094;
+            </button>
 
-              <p class="project-category">
-                Trusted Execution · Real-Time AI
-              </p>
+            <!-- Next arrow -->
+            <button
+              class="carousel-arrow carousel-arrow-right"
+              type="button"
+              data-carousel-next
+              aria-label="Show next project"
+            >
+              &#10095;
+            </button>
 
-              <h3 class="project-title">
-                Confidential DNN Execution Inside TrustZone
-              </h3>
+          </div>
 
-              <p class="project-description">
-                I develop scheduling and task-fusion methods for executing
-                deep neural network workloads inside Arm TrustZone while
-                controlling secure-memory requirements, execution overhead,
-                and real-time constraints.
-              </p>
+          <!-- Carousel dots -->
+          <div
+            class="carousel-dots"
+            data-carousel-dots
+            aria-label="Select a research project"
+          >
+            <button
+              class="carousel-dot active"
+              type="button"
+              aria-label="Show project 1"
+              aria-current="true"
+            ></button>
 
-              <div class="project-tags">
-                <span>Arm TrustZone</span>
-                <span>Real-Time AI</span>
-                <span>Scheduling</span>
-              </div>
+            <button
+              class="carousel-dot"
+              type="button"
+              aria-label="Show project 2"
+            ></button>
 
-              <a
-                class="project-link"
-                href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ECRTS.2024.13"
-                target="_blank"
-                rel="noopener"
-              >
-                Read the ECRTS paper →
-              </a>
+            <button
+              class="carousel-dot"
+              type="button"
+              aria-label="Show project 3"
+            ></button>
 
-            </div>
-          </article>
+            <button
+              class="carousel-dot"
+              type="button"
+              aria-label="Show project 4"
+            ></button>
 
-          <!-- Project 2 -->
-          <article class="research-slide">
+            <button
+              class="carousel-dot"
+              type="button"
+              aria-label="Show project 5"
+            ></button>
+          </div>
 
-            <div class="carousel-image">
-              <img
-                src="assets/images/project-timing.webp"
-                alt="Timing-channel security in real-time systems"
-              >
-            </div>
-
-            <div class="project-information">
-
-              <p class="project-category">
-                Timing Security · Information Leakage
-              </p>
-
-              <h3 class="project-title">
-                Covert Channels and Information Leakage
-              </h3>
-
-              <p class="project-description">
-                I investigate how observable scheduling behavior can reveal
-                sensitive execution patterns in fixed-priority real-time
-                systems. This work develops analytical and statistical
-                techniques for measuring and mitigating timing leakage.
-              </p>
-
-              <div class="project-tags">
-                <span>Covert Channels</span>
-                <span>Information Leakage</span>
-                <span>Fixed Priority</span>
-              </div>
-
-              <a
-                class="project-link"
-                href="https://ieeexplore.ieee.org/abstract/document/10551375"
-                target="_blank"
-                rel="noopener"
-              >
-                Read the ISORC paper →
-              </a>
-
-            </div>
-          </article>
-
-          <!-- Project 3 -->
-          <article class="research-slide">
-
-            <div class="carousel-image">
-              <img
-                src="assets/images/project-survey.webp"
-                alt="Privacy-aware randomized scheduling"
-              >
-            </div>
-
-            <div class="project-information">
-
-              <p class="project-category">
-                Privacy · Scheduling · Control
-              </p>
-
-              <h3 class="project-title">
-                Privacy-Aware Randomized Scheduling
-              </h3>
-
-              <p class="project-description">
-                I study how differential privacy and schedule randomization
-                affect attack opportunities, deadline guarantees, scheduling
-                predictability, and control-system stability in real-time
-                cyber-physical systems.
-              </p>
-
-              <div class="project-tags">
-                <span>Differential Privacy</span>
-                <span>Randomization</span>
-                <span>Control Stability</span>
-              </div>
-
-              <span class="project-status">
-                EMSOFT 2026 · Accepted
-              </span>
-
-            </div>
-          </article>
-
-          <!-- Project 4 -->
-          <article class="research-slide">
-
-            <div class="carousel-image">
-              <img
-                src="assets/images/project-embedded-ai.webp"
-                alt="Language models running on embedded devices"
-              >
-            </div>
-
-            <div class="project-information">
-
-              <p class="project-category">
-                Embedded AI · Performance Analysis
-              </p>
-
-              <h3 class="project-title">
-                Language Models on Resource-Limited Devices
-              </h3>
-
-              <p class="project-description">
-                I benchmark modern language models on embedded computing
-                platforms by evaluating inference latency, memory use,
-                energy consumption, model size, and application accuracy.
-              </p>
-
-              <div class="project-tags">
-                <span>Embedded Systems</span>
-                <span>Natural Language Processing</span>
-                <span>Performance</span>
-              </div>
-
-              <a
-                class="project-link"
-                href="https://dl.acm.org/doi/abs/10.1145/3629526.3645054"
-                target="_blank"
-                rel="noopener"
-              >
-                Read the ICPE paper →
-              </a>
-
-            </div>
-          </article>
-
-          <!-- Project 5 -->
-          <article class="research-slide">
-
-            <div class="carousel-image">
-              <img
-                src="assets/images/project-vulnerability.webp"
-                alt="Learning-based cyber vulnerability prioritization"
-              >
-            </div>
-
-            <div class="project-information">
-
-              <p class="project-category">
-                Cyber Defense · Machine Learning
-              </p>
-
-              <h3 class="project-title">
-                Learning-Based Vulnerability Prioritization
-              </h3>
-
-              <p class="project-description">
-                I develop learning-based composite metrics that combine
-                exploitability, severity, weakness information, threat
-                intelligence, and semantic signals to help defenders
-                prioritize CVEs and allocate remediation resources.
-              </p>
-
-              <div class="project-tags">
-                <span>CVSS</span>
-                <span>EPSS</span>
-                <span>KEV</span>
-                <span>Learning to Rank</span>
-              </div>
-
-              <span class="project-status">
-                Ongoing Research
-              </span>
-
-            </div>
-          </article>
+          <!-- Project counter -->
+          <p class="carousel-counter">
+            <span data-current-project>1</span>
+            <span aria-hidden="true"> / </span>
+            <span data-total-projects>5</span>
+          </p>
 
         </div>
 
-        <!-- Previous arrow -->
-        <button
-          class="carousel-arrow carousel-arrow-left"
-          type="button"
-          data-carousel-previous
-          aria-label="Show previous project"
-        >
-          &#10094;
-        </button>
-
-        <!-- Next arrow -->
-        <button
-          class="carousel-arrow carousel-arrow-right"
-          type="button"
-          data-carousel-next
-          aria-label="Show next project"
-        >
-          &#10095;
-        </button>
-
       </div>
+    </section>
 
-      <!-- Carousel dots -->
-      <div class="carousel-dots" data-carousel-dots>
-        <button
-          class="carousel-dot active"
-          type="button"
-          aria-label="Show project 1"
-        ></button>
+  </main>
 
-        <button
-          class="carousel-dot"
-          type="button"
-          aria-label="Show project 2"
-        ></button>
+  <!-- =========================
+       Footer
+       ========================= -->
+  <footer class="site-footer">
+    <div class="container">
 
-        <button
-          class="carousel-dot"
-          type="button"
-          aria-label="Show project 3"
-        ></button>
-
-        <button
-          class="carousel-dot"
-          type="button"
-          aria-label="Show project 4"
-        ></button>
-
-        <button
-          class="carousel-dot"
-          type="button"
-          aria-label="Show project 5"
-        ></button>
-      </div>
-
-      <p class="carousel-counter">
-        <span data-current-project>1</span>
-        <span aria-hidden="true"> / </span>
-        <span>5</span>
+      <p>
+        © <span id="year"></span>
+        Mohammad Fakhruddin Babar
       </p>
 
+      <a href="#top">
+        Back to top ↑
+      </a>
+
     </div>
+  </footer>
 
-  </div>
-</section>
+  <!-- Existing shared website JavaScript -->
+  <script src="script.js?v=50"></script>
 
-      </main>
-    <footer class="site-footer">
-  <div class="container">
-    <p>© <span id="year"></span> Mohammad Fakhruddin Babar</p>
-    <a href="#top">Back to top ↑</a>
-  </div>
-</footer>
-<script src="script.js"></script>
+  <!-- Research carousel JavaScript -->
+  <script src="research-carousel.js?v=50"></script>
 
-    </body>
-    </html>
+</body>
+</html>
