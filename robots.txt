@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fakhruddinbabor7.github.io/mfb/sitemap.xml
