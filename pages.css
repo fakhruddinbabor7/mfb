@@ -128,32 +128,3 @@
 }
 
 
-/* Publications page white background */
-body {
-  background: #ffffff;
-}
-
-.publications-page {
-  background: #ffffff;
-  color: #222222;
-}
-
-.publications-page .section-heading h2,
-.publications-page .publication-item h3 {
-  color: #222222;
-}
-
-.publications-page .section-heading p,
-.publications-page .publication-item p {
-  color: #555555;
-}
-
-.publication-item {
-  border-bottom: 1px solid #dddddd;
-}
-
-.publication-cta {
-  background: #981e32;
-  color: #ffffff;
-}
-
