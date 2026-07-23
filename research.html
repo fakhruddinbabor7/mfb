@@ -20,8 +20,11 @@
 
   <link rel="icon" href="favicon.png" type="image/png">
 
-  <link rel="stylesheet" href="styles.css?v=70">
-  <link rel="stylesheet" href="research-carousel.css?v=70">
+  <!-- Main website design -->
+  <link rel="stylesheet" href="styles.css?v=80">
+
+  <!-- Research-page design -->
+  <link rel="stylesheet" href="research-carousel.css?v=80">
 </head>
 
 <body class="research-page">
@@ -30,6 +33,9 @@
     Skip to main content
   </a>
 
+  <!-- =========================
+       Header
+       ========================= -->
   <header class="site-header" id="top">
     <div class="nav-wrap container">
 
@@ -83,12 +89,19 @@
 
   <main id="main">
 
+    <!-- =========================
+         Research introduction
+         ========================= -->
     <section class="research-intro">
       <div class="container">
 
-        <p class="eyebrow">Projects</p>
+        <p class="eyebrow">
+          Projects
+        </p>
 
-        <h1>Research Projects</h1>
+        <h1>
+          Research Projects
+        </h1>
 
         <p class="research-intro-text">
           My research connects real-time systems, cyber-physical systems
@@ -99,67 +112,245 @@
       </div>
     </section>
 
+    <!-- =========================
+         Research image gallery
+         One image appears at a time
+         ========================= -->
+    <section class="research-gallery-section">
+      <div class="container">
+
+        <div class="gallery-section-heading">
+          <p class="eyebrow">
+            Research Gallery
+          </p>
+
+          <h2>
+            Research highlights
+          </h2>
+
+          <p>
+            Use the arrows to move through figures and visual highlights
+            from my research projects.
+          </p>
+        </div>
+
+        <div
+          class="research-image-gallery"
+          data-research-gallery
+          tabindex="0"
+          aria-label="Research image gallery"
+        >
+
+          <div class="research-gallery-window">
+
+            <div
+              class="research-gallery-track"
+              data-gallery-track
+            >
+
+              <!-- Image 1 -->
+              <figure class="research-gallery-slide">
+                <img
+                  src="assets/images/deeptrust.jpg"
+                  alt="Confidential DNN execution inside Arm TrustZone"
+                >
+
+                <figcaption>
+                  Confidential DNN Execution Inside TrustZone
+                </figcaption>
+              </figure>
+
+              <!-- Image 2 -->
+              <figure class="research-gallery-slide">
+                <img
+                  src="assets/images/project-timing.webp"
+                  alt="Timing-channel security in real-time systems"
+                >
+
+                <figcaption>
+                  Covert Channels and Information Leakage
+                </figcaption>
+              </figure>
+
+              <!-- Image 3 -->
+              <figure class="research-gallery-slide">
+                <img
+                  src="assets/images/project-survey.webp"
+                  alt="Privacy-aware randomized scheduling"
+                >
+
+                <figcaption>
+                  Privacy-Aware Randomized Scheduling
+                </figcaption>
+              </figure>
+
+              <!-- Image 4 -->
+              <figure class="research-gallery-slide">
+                <img
+                  src="assets/images/project-embedded-ai.webp"
+                  alt="Language models running on embedded devices"
+                >
+
+                <figcaption>
+                  Language Models on Resource-Limited Devices
+                </figcaption>
+              </figure>
+
+              <!-- Image 5 -->
+              <figure class="research-gallery-slide">
+                <img
+                  src="assets/images/project-vulnerability.webp"
+                  alt="Learning-based cyber vulnerability prioritization"
+                >
+
+                <figcaption>
+                  Learning-Based Vulnerability Prioritization
+                </figcaption>
+              </figure>
+
+            </div>
+
+            <!-- Previous image -->
+            <button
+              class="gallery-arrow gallery-arrow-left"
+              type="button"
+              data-gallery-previous
+              aria-label="Show previous research image"
+            >
+              &#10094;
+            </button>
+
+            <!-- Next image -->
+            <button
+              class="gallery-arrow gallery-arrow-right"
+              type="button"
+              data-gallery-next
+              aria-label="Show next research image"
+            >
+              &#10095;
+            </button>
+
+          </div>
+
+          <!-- Gallery navigation dots -->
+          <div
+            class="research-gallery-dots"
+            data-gallery-dots
+            aria-label="Select a research image"
+          >
+            <button
+              class="research-gallery-dot active"
+              type="button"
+              aria-label="Show image 1"
+              aria-current="true"
+            ></button>
+
+            <button
+              class="research-gallery-dot"
+              type="button"
+              aria-label="Show image 2"
+            ></button>
+
+            <button
+              class="research-gallery-dot"
+              type="button"
+              aria-label="Show image 3"
+            ></button>
+
+            <button
+              class="research-gallery-dot"
+              type="button"
+              aria-label="Show image 4"
+            ></button>
+
+            <button
+              class="research-gallery-dot"
+              type="button"
+              aria-label="Show image 5"
+            ></button>
+          </div>
+
+          <!-- Gallery counter -->
+          <p class="research-gallery-counter">
+            <span data-current-gallery-image>1</span>
+            <span aria-hidden="true"> / </span>
+            <span data-total-gallery-images>5</span>
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================
+         Text-only project list
+         No images inside the projects
+         ========================= -->
     <section class="research-projects">
       <div class="container">
+
+        <div class="project-list-heading">
+          <p class="eyebrow">
+            Selected Work
+          </p>
+
+          <h2>
+            Project details
+          </h2>
+        </div>
 
         <div class="research-project-list">
 
           <!-- Project 1 -->
           <article class="research-project-card reveal">
 
-            <header class="project-heading">
-              <p class="project-category">
-                Trusted Execution · Real-Time AI
-              </p>
+            <div class="project-number" aria-hidden="true">
+              01
+            </div>
 
-              <h2 class="project-title">
-                Confidential DNN Execution Inside TrustZone
-              </h2>
-            </header>
+            <div class="project-card-content">
 
-            <div class="project-body">
-
-              <div class="project-image">
-                <img
-                  src="assets/images/deeptrust.jpg"
-                  alt="Confidential DNN execution inside Arm TrustZone"
-                  loading="lazy"
-                >
-              </div>
-
-              <div class="project-information">
-                <p class="project-description">
-                  I develop scheduling and task-fusion methods for
-                  executing deep neural network workloads inside Arm
-                  TrustZone while controlling secure-memory requirements,
-                  execution overhead, and real-time constraints.
+              <header class="project-heading">
+                <p class="project-category">
+                  Trusted Execution · Real-Time AI
                 </p>
 
-                <h3 class="key-points-title">
-                  Key points
-                </h3>
+                <h2 class="project-title">
+                  Confidential DNN Execution Inside TrustZone
+                </h2>
+              </header>
 
-                <ul class="project-key-points">
-                  <li>Analytical schedulability models</li>
-                  <li>Secure-memory-aware DNN deployment</li>
-                  <li>Reduced trusted-execution context switches</li>
-                </ul>
+              <p class="project-description">
+                I develop scheduling and task-fusion methods for executing
+                deep neural network workloads inside Arm TrustZone while
+                controlling secure-memory requirements, execution overhead,
+                and real-time constraints.
+              </p>
 
-                <div class="project-tags">
-                  <span>Arm TrustZone</span>
-                  <span>Real-Time AI</span>
-                  <span>Scheduling</span>
-                </div>
+              <h3 class="key-points-title">
+                Key points
+              </h3>
 
-                <a
-                  class="project-link"
-                  href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ECRTS.2024.13"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Read the ECRTS paper →
-                </a>
+              <ul class="project-key-points">
+                <li>Analytical schedulability models</li>
+                <li>Secure-memory-aware DNN deployment</li>
+                <li>Reduced trusted-execution context switches</li>
+              </ul>
+
+              <div class="project-tags">
+                <span>Arm TrustZone</span>
+                <span>Real-Time AI</span>
+                <span>Scheduling</span>
               </div>
+
+              <a
+                class="project-link"
+                href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ECRTS.2024.13"
+                target="_blank"
+                rel="noopener"
+              >
+                Read the ECRTS paper →
+              </a>
 
             </div>
           </article>
@@ -167,60 +358,53 @@
           <!-- Project 2 -->
           <article class="research-project-card reveal">
 
-            <header class="project-heading">
-              <p class="project-category">
-                Timing Security · Information Leakage
-              </p>
+            <div class="project-number" aria-hidden="true">
+              02
+            </div>
 
-              <h2 class="project-title">
-                Covert Channels and Information Leakage
-              </h2>
-            </header>
+            <div class="project-card-content">
 
-            <div class="project-body">
-
-              <div class="project-image">
-                <img
-                  src="assets/images/project-timing.webp"
-                  alt="Timing-channel security in real-time systems"
-                  loading="lazy"
-                >
-              </div>
-
-              <div class="project-information">
-                <p class="project-description">
-                  I investigate how observable scheduling behavior can
-                  reveal sensitive execution patterns in fixed-priority
-                  real-time systems. This work develops analytical and
-                  statistical techniques for measuring and mitigating
-                  timing leakage.
+              <header class="project-heading">
+                <p class="project-category">
+                  Timing Security · Information Leakage
                 </p>
 
-                <h3 class="key-points-title">
-                  Key points
-                </h3>
+                <h2 class="project-title">
+                  Covert Channels and Information Leakage
+                </h2>
+              </header>
 
-                <ul class="project-key-points">
-                  <li>Models timing-based information leakage</li>
-                  <li>Uses statistical inference to recover patterns</li>
-                  <li>Studies defenses that reduce predictability</li>
-                </ul>
+              <p class="project-description">
+                I investigate how observable scheduling behavior can reveal
+                sensitive execution patterns in fixed-priority real-time
+                systems. This work develops analytical and statistical
+                techniques for measuring and mitigating timing leakage.
+              </p>
 
-                <div class="project-tags">
-                  <span>Covert Channels</span>
-                  <span>Information Leakage</span>
-                  <span>Fixed Priority</span>
-                </div>
+              <h3 class="key-points-title">
+                Key points
+              </h3>
 
-                <a
-                  class="project-link"
-                  href="https://ieeexplore.ieee.org/abstract/document/10551375"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Read the ISORC paper →
-                </a>
+              <ul class="project-key-points">
+                <li>Models timing-based information leakage</li>
+                <li>Uses statistical inference to recover patterns</li>
+                <li>Studies defenses that reduce predictability</li>
+              </ul>
+
+              <div class="project-tags">
+                <span>Covert Channels</span>
+                <span>Information Leakage</span>
+                <span>Fixed Priority</span>
               </div>
+
+              <a
+                class="project-link"
+                href="https://ieeexplore.ieee.org/abstract/document/10551375"
+                target="_blank"
+                rel="noopener"
+              >
+                Read the ISORC paper →
+              </a>
 
             </div>
           </article>
@@ -228,55 +412,48 @@
           <!-- Project 3 -->
           <article class="research-project-card reveal">
 
-            <header class="project-heading">
-              <p class="project-category">
-                Privacy · Scheduling · Control
-              </p>
+            <div class="project-number" aria-hidden="true">
+              03
+            </div>
 
-              <h2 class="project-title">
-                Privacy-Aware Randomized Scheduling
-              </h2>
-            </header>
+            <div class="project-card-content">
 
-            <div class="project-body">
-
-              <div class="project-image">
-                <img
-                  src="assets/images/project-survey.webp"
-                  alt="Privacy-aware randomized scheduling"
-                  loading="lazy"
-                >
-              </div>
-
-              <div class="project-information">
-                <p class="project-description">
-                  I study how differential privacy and schedule
-                  randomization affect attack opportunities, deadline
-                  guarantees, scheduling predictability, and
-                  control-system stability in real-time cyber-physical
-                  systems.
+              <header class="project-heading">
+                <p class="project-category">
+                  Privacy · Scheduling · Control
                 </p>
 
-                <h3 class="key-points-title">
-                  Key points
-                </h3>
+                <h2 class="project-title">
+                  Privacy-Aware Randomized Scheduling
+                </h2>
+              </header>
 
-                <ul class="project-key-points">
-                  <li>Measures anterior, posterior, and pincer attacks</li>
-                  <li>Evaluates deadline and schedulability effects</li>
-                  <li>Connects scheduling jitter to control stability</li>
-                </ul>
+              <p class="project-description">
+                I study how differential privacy and schedule randomization
+                affect attack opportunities, deadline guarantees, scheduling
+                predictability, and control-system stability in real-time
+                cyber-physical systems.
+              </p>
 
-                <div class="project-tags">
-                  <span>Differential Privacy</span>
-                  <span>Randomization</span>
-                  <span>Control Stability</span>
-                </div>
+              <h3 class="key-points-title">
+                Key points
+              </h3>
 
-                <span class="project-status">
-                  EMSOFT 2026 · Accepted
-                </span>
+              <ul class="project-key-points">
+                <li>Measures anterior, posterior, and pincer attacks</li>
+                <li>Evaluates deadline and schedulability effects</li>
+                <li>Connects scheduling jitter to control stability</li>
+              </ul>
+
+              <div class="project-tags">
+                <span>Differential Privacy</span>
+                <span>Randomization</span>
+                <span>Control Stability</span>
               </div>
+
+              <span class="project-status">
+                EMSOFT 2026 · Accepted
+              </span>
 
             </div>
           </article>
@@ -284,59 +461,52 @@
           <!-- Project 4 -->
           <article class="research-project-card reveal">
 
-            <header class="project-heading">
-              <p class="project-category">
-                Embedded AI · Performance Analysis
-              </p>
+            <div class="project-number" aria-hidden="true">
+              04
+            </div>
 
-              <h2 class="project-title">
-                Language Models on Resource-Limited Devices
-              </h2>
-            </header>
+            <div class="project-card-content">
 
-            <div class="project-body">
-
-              <div class="project-image">
-                <img
-                  src="assets/images/project-embedded-ai.webp"
-                  alt="Language models running on embedded devices"
-                  loading="lazy"
-                >
-              </div>
-
-              <div class="project-information">
-                <p class="project-description">
-                  I benchmark modern language models on embedded
-                  computing platforms by evaluating inference latency,
-                  memory use, energy consumption, model size, and
-                  application accuracy.
+              <header class="project-heading">
+                <p class="project-category">
+                  Embedded AI · Performance Analysis
                 </p>
 
-                <h3 class="key-points-title">
-                  Key points
-                </h3>
+                <h2 class="project-title">
+                  Language Models on Resource-Limited Devices
+                </h2>
+              </header>
 
-                <ul class="project-key-points">
-                  <li>Measures latency, memory, energy, and accuracy</li>
-                  <li>Compares models across embedded platforms</li>
-                  <li>Identifies practical deployment tradeoffs</li>
-                </ul>
+              <p class="project-description">
+                I benchmark modern language models on embedded computing
+                platforms by evaluating inference latency, memory use,
+                energy consumption, model size, and application accuracy.
+              </p>
 
-                <div class="project-tags">
-                  <span>Embedded Systems</span>
-                  <span>Natural Language Processing</span>
-                  <span>Performance</span>
-                </div>
+              <h3 class="key-points-title">
+                Key points
+              </h3>
 
-                <a
-                  class="project-link"
-                  href="https://dl.acm.org/doi/abs/10.1145/3629526.3645054"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Read the ICPE paper →
-                </a>
+              <ul class="project-key-points">
+                <li>Measures latency, memory, energy, and accuracy</li>
+                <li>Compares models across embedded platforms</li>
+                <li>Identifies practical deployment tradeoffs</li>
+              </ul>
+
+              <div class="project-tags">
+                <span>Embedded Systems</span>
+                <span>Natural Language Processing</span>
+                <span>Performance</span>
               </div>
+
+              <a
+                class="project-link"
+                href="https://dl.acm.org/doi/abs/10.1145/3629526.3645054"
+                target="_blank"
+                rel="noopener"
+              >
+                Read the ICPE paper →
+              </a>
 
             </div>
           </article>
@@ -344,55 +514,49 @@
           <!-- Project 5 -->
           <article class="research-project-card reveal">
 
-            <header class="project-heading">
-              <p class="project-category">
-                Cyber Defense · Machine Learning
-              </p>
+            <div class="project-number" aria-hidden="true">
+              05
+            </div>
 
-              <h2 class="project-title">
-                Learning-Based Vulnerability Prioritization
-              </h2>
-            </header>
+            <div class="project-card-content">
 
-            <div class="project-body">
-
-              <div class="project-image">
-                <img
-                  src="assets/images/project-vulnerability.webp"
-                  alt="Learning-based cyber vulnerability prioritization"
-                  loading="lazy"
-                >
-              </div>
-
-              <div class="project-information">
-                <p class="project-description">
-                  I develop learning-based composite metrics that combine
-                  exploitability, severity, weakness information, threat
-                  intelligence, and semantic signals to help defenders
-                  prioritize CVEs and allocate remediation resources.
+              <header class="project-heading">
+                <p class="project-category">
+                  Cyber Defense · Machine Learning
                 </p>
 
-                <h3 class="key-points-title">
-                  Key points
-                </h3>
+                <h2 class="project-title">
+                  Learning-Based Vulnerability Prioritization
+                </h2>
+              </header>
 
-                <ul class="project-key-points">
-                  <li>Combines CVSS, EPSS, CWSS, KEV, and semantic data</li>
-                  <li>Uses learning-to-rank and composite scoring</li>
-                  <li>Supports earlier identification of high-risk CVEs</li>
-                </ul>
+              <p class="project-description">
+                I develop learning-based composite metrics that combine
+                exploitability, severity, weakness information, threat
+                intelligence, and semantic signals to help defenders
+                prioritize CVEs and allocate remediation resources.
+              </p>
 
-                <div class="project-tags">
-                  <span>CVSS</span>
-                  <span>EPSS</span>
-                  <span>KEV</span>
-                  <span>Learning to Rank</span>
-                </div>
+              <h3 class="key-points-title">
+                Key points
+              </h3>
 
-                <span class="project-status">
-                  Ongoing Research
-                </span>
+              <ul class="project-key-points">
+                <li>Combines CVSS, EPSS, CWSS, KEV, and semantic data</li>
+                <li>Uses learning-to-rank and composite scoring</li>
+                <li>Supports earlier identification of high-risk CVEs</li>
+              </ul>
+
+              <div class="project-tags">
+                <span>CVSS</span>
+                <span>EPSS</span>
+                <span>KEV</span>
+                <span>Learning to Rank</span>
               </div>
+
+              <span class="project-status">
+                Ongoing Research
+              </span>
 
             </div>
           </article>
@@ -404,7 +568,7 @@
 
   </main>
 
-  <footer class="site-footer">
+    <footer class="site-footer">
     <div class="container">
 
       <p>
@@ -419,7 +583,13 @@
     </div>
   </footer>
 
-  <script src="script.js?v=70"></script>
+  <!-- Existing site behavior -->
+  <script src="script.js?v=80"></script>
+
+  <!-- Top research-image gallery behavior -->
+  <script src="research-gallery.js?v=80"></script>
 
 </body>
 </html>
+
+
