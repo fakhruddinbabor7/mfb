@@ -297,3 +297,24 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 
 
+
+@media (max-width: 960px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .hero-right {
+    grid-column: 1;
+    grid-row: 1;
+    max-width: 650px;
+    justify-self: center;
+  }
+
+  .hero-copy {
+    grid-column: 1;
+    grid-row: 2;
+    padding-top: 0;
+  }
+}
+
