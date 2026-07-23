@@ -254,3 +254,46 @@ button, a { -webkit-tap-highlight-color: transparent; }
   max-width: 680px;
 }
 
+
+/* Home page: photo and bio left, introduction right */
+.hero-grid {
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: start;
+  gap: clamp(45px, 7vw, 100px);
+}
+
+/* Move image, biography, and cards to the left */
+.hero-right {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  max-width: 560px;
+  justify-self: start;
+  margin-top: 0;
+}
+
+/* Move heading, buttons, and links to the right */
+.hero-copy {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: start;
+  padding-top: 0;
+}
+
+/* Center the photo over the biography */
+.hero-right .hero-visual {
+  margin: 0 auto 28px;
+}
+
+/* Biography width */
+.about-under-photo {
+  width: 100%;
+  max-width: 560px;
+}
+
+/* Reduce the top spacing of the entire Home section */
+.hero {
+  padding-top: 50px;
+}
+
+
