@@ -53,62 +53,308 @@
       <p>Security mechanisms are most useful when they respect timing, resource, and deployment constraints.</p>
     </div>
 
-    <div class="project-grid">
-      <article class="project-card project-featured reveal">
-        <div class="project-image"><img src="assets/images/deeptrust.jpg" alt="Diagram illustrating trusted real-time neural inference" loading="lazy"></div>
-        <div class="project-content">
-          <p class="project-kicker">Trusted execution · Real-time AI</p>
-          <h3>Confidential DNN execution inside TrustZone</h3>
-          <p>Scheduling and task-fusion methods for executing DNN workloads inside Arm TrustZone while controlling secure-memory and context-switch overheads.</p>
-          <ul class="impact-list">
-            <li>Analytical schedulability models</li>
-            <li>Secure-memory-aware deployment</li>
-            <li>Reduced TEE context switches</li>
-          </ul>
-          <a class="text-link" href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ECRTS.2024.13" target="_blank" rel="noopener">Read the ECRTS paper <span aria-hidden="true">→</span></a>
-        </div>
-      </article>
+ <section class="research-projects">
+  <div class="container">
 
-      
-      <article class="project-card reveal">
-        <div class="project-image"><img src="assets/images/project-embedded-ai.webp" alt="Timing pattern diagram for real-time task security research" loading="lazy"></div>
-        <div class="project-content">
-          <p class="project-kicker">Timing security</p>
-          <h3>Covert channels and information leakage</h3>
-          <p>Models and statistical methods that reveal how low-priority tasks can infer sensitive execution patterns from fixed-priority schedules.</p>
-          <a class="text-link" href="https://ieeexplore.ieee.org/abstract/document/10551375" target="_blank" rel="noopener">View the ISORC paper <span aria-hidden="true">→</span></a>
-        </div>
-      </article>
-
-      <article class="project-card reveal">
-        <div class="project-image"><img src="assets/images/project-survey.webp" alt="Overview of trusted deep neural execution research" loading="lazy"></div>
-        <div class="project-content">
-          <p class="project-kicker">Privacy · Scheduling · Control</p>
-          <h3>Privacy-aware randomized scheduling</h3>
-          <p>Studying how differential privacy and schedule randomization affect attack opportunities, deadline guarantees, and control-system stability.</p>
-          <span class="paper-status">EMSOFT 2026 · Accepted</span>
-        </div>
-      </article>
-
-      <article class="project-card reveal">
-        <div class="project-image"><img src="assets/images/project-timing.webp" alt="Performance comparison for language models on embedded devices" loading="lazy"></div>
-        <div class="project-content">
-          <p class="project-kicker">Embedded AI</p>
-          <h3>Language models on resource-limited devices</h3>
-          <p>Benchmarking inference time, memory use, energy consumption, and accuracy across embedded platforms and model configurations.</p>
-          <a class="text-link" href="https://dl.acm.org/doi/abs/10.1145/3629526.3645054" target="_blank" rel="noopener">View the ICPE paper <span aria-hidden="true">→</span></a>
-        </div>
-      </article>
-
-      <article class="project-card reveal">
-        <div class="project-content project-content-only">
-          <p class="project-kicker">Cyber defense · Machine learning</p>
-          <h3>Learning-based vulnerability prioritization</h3>
-          <p>Combining exploitability, severity, weakness, and semantic signals to help defenders rank CVEs and focus remediation resources.</p>
-          <div class="tag-row"><span>CVSS</span><span>EPSS</span><span>KEV</span><span>Learning to Rank</span></div>
-        </div>
-      </article>
+    <div class="research-section-heading">
+      <p class="eyebrow">Selected Projects</p>
+      <h2>Research Projects</h2>
+      <p>
+        Explore my research in secure real-time systems, cyber-physical
+        systems security, trustworthy AI, and vulnerability prioritization.
+      </p>
     </div>
+
+    <div
+      class="research-carousel"
+      data-research-carousel
+      aria-label="Research projects"
+    >
+
+      <div class="carousel-window">
+
+        <div class="carousel-track" data-carousel-track>
+
+          <!-- Project 1 -->
+          <article class="research-slide">
+
+            <div class="carousel-image">
+              <img
+                src="assets/images/deeptrust.jpg"
+                alt="Confidential DNN execution inside Arm TrustZone"
+              >
+            </div>
+
+            <div class="project-information">
+
+              <p class="project-category">
+                Trusted Execution · Real-Time AI
+              </p>
+
+              <h3 class="project-title">
+                Confidential DNN Execution Inside TrustZone
+              </h3>
+
+              <p class="project-description">
+                I develop scheduling and task-fusion methods for executing
+                deep neural network workloads inside Arm TrustZone while
+                controlling secure-memory requirements, execution overhead,
+                and real-time constraints.
+              </p>
+
+              <div class="project-tags">
+                <span>Arm TrustZone</span>
+                <span>Real-Time AI</span>
+                <span>Scheduling</span>
+              </div>
+
+              <a
+                class="project-link"
+                href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ECRTS.2024.13"
+                target="_blank"
+                rel="noopener"
+              >
+                Read the ECRTS paper →
+              </a>
+
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="research-slide">
+
+            <div class="carousel-image">
+              <img
+                src="assets/images/project-timing.webp"
+                alt="Timing-channel security in real-time systems"
+              >
+            </div>
+
+            <div class="project-information">
+
+              <p class="project-category">
+                Timing Security · Information Leakage
+              </p>
+
+              <h3 class="project-title">
+                Covert Channels and Information Leakage
+              </h3>
+
+              <p class="project-description">
+                I investigate how observable scheduling behavior can reveal
+                sensitive execution patterns in fixed-priority real-time
+                systems. This work develops analytical and statistical
+                techniques for measuring and mitigating timing leakage.
+              </p>
+
+              <div class="project-tags">
+                <span>Covert Channels</span>
+                <span>Information Leakage</span>
+                <span>Fixed Priority</span>
+              </div>
+
+              <a
+                class="project-link"
+                href="https://ieeexplore.ieee.org/abstract/document/10551375"
+                target="_blank"
+                rel="noopener"
+              >
+                Read the ISORC paper →
+              </a>
+
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="research-slide">
+
+            <div class="carousel-image">
+              <img
+                src="assets/images/project-survey.webp"
+                alt="Privacy-aware randomized scheduling"
+              >
+            </div>
+
+            <div class="project-information">
+
+              <p class="project-category">
+                Privacy · Scheduling · Control
+              </p>
+
+              <h3 class="project-title">
+                Privacy-Aware Randomized Scheduling
+              </h3>
+
+              <p class="project-description">
+                I study how differential privacy and schedule randomization
+                affect attack opportunities, deadline guarantees, scheduling
+                predictability, and control-system stability in real-time
+                cyber-physical systems.
+              </p>
+
+              <div class="project-tags">
+                <span>Differential Privacy</span>
+                <span>Randomization</span>
+                <span>Control Stability</span>
+              </div>
+
+              <span class="project-status">
+                EMSOFT 2026 · Accepted
+              </span>
+
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="research-slide">
+
+            <div class="carousel-image">
+              <img
+                src="assets/images/project-embedded-ai.webp"
+                alt="Language models running on embedded devices"
+              >
+            </div>
+
+            <div class="project-information">
+
+              <p class="project-category">
+                Embedded AI · Performance Analysis
+              </p>
+
+              <h3 class="project-title">
+                Language Models on Resource-Limited Devices
+              </h3>
+
+              <p class="project-description">
+                I benchmark modern language models on embedded computing
+                platforms by evaluating inference latency, memory use,
+                energy consumption, model size, and application accuracy.
+              </p>
+
+              <div class="project-tags">
+                <span>Embedded Systems</span>
+                <span>Natural Language Processing</span>
+                <span>Performance</span>
+              </div>
+
+              <a
+                class="project-link"
+                href="https://dl.acm.org/doi/abs/10.1145/3629526.3645054"
+                target="_blank"
+                rel="noopener"
+              >
+                Read the ICPE paper →
+              </a>
+
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="research-slide">
+
+            <div class="carousel-image">
+              <img
+                src="assets/images/project-vulnerability.webp"
+                alt="Learning-based cyber vulnerability prioritization"
+              >
+            </div>
+
+            <div class="project-information">
+
+              <p class="project-category">
+                Cyber Defense · Machine Learning
+              </p>
+
+              <h3 class="project-title">
+                Learning-Based Vulnerability Prioritization
+              </h3>
+
+              <p class="project-description">
+                I develop learning-based composite metrics that combine
+                exploitability, severity, weakness information, threat
+                intelligence, and semantic signals to help defenders
+                prioritize CVEs and allocate remediation resources.
+              </p>
+
+              <div class="project-tags">
+                <span>CVSS</span>
+                <span>EPSS</span>
+                <span>KEV</span>
+                <span>Learning to Rank</span>
+              </div>
+
+              <span class="project-status">
+                Ongoing Research
+              </span>
+
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Previous arrow -->
+        <button
+          class="carousel-arrow carousel-arrow-left"
+          type="button"
+          data-carousel-previous
+          aria-label="Show previous project"
+        >
+          &#10094;
+        </button>
+
+        <!-- Next arrow -->
+        <button
+          class="carousel-arrow carousel-arrow-right"
+          type="button"
+          data-carousel-next
+          aria-label="Show next project"
+        >
+          &#10095;
+        </button>
+
+      </div>
+
+      <!-- Carousel dots -->
+      <div class="carousel-dots" data-carousel-dots>
+        <button
+          class="carousel-dot active"
+          type="button"
+          aria-label="Show project 1"
+        ></button>
+
+        <button
+          class="carousel-dot"
+          type="button"
+          aria-label="Show project 2"
+        ></button>
+
+        <button
+          class="carousel-dot"
+          type="button"
+          aria-label="Show project 3"
+        ></button>
+
+        <button
+          class="carousel-dot"
+          type="button"
+          aria-label="Show project 4"
+        ></button>
+
+        <button
+          class="carousel-dot"
+          type="button"
+          aria-label="Show project 5"
+        ></button>
+      </div>
+
+      <p class="carousel-counter">
+        <span data-current-project>1</span>
+        <span aria-hidden="true"> / </span>
+        <span>5</span>
+      </p>
+
+    </div>
+
   </div>
 </section>
 
