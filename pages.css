@@ -1,0 +1,128 @@
+/*
+  Shared styles for the multi-page website.
+  Edit this file for page headings, active navigation, and homepage section cards.
+*/
+
+.site-nav a[aria-current="page"],
+.site-nav a.active {
+  color: var(--accent);
+}
+
+.page-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 92px 0 72px;
+  background:
+    radial-gradient(circle at 85% 20%, rgba(152, 30, 50, .10), transparent 34%),
+    linear-gradient(180deg, #fff, #fbfaf9);
+  border-bottom: 1px solid var(--line);
+}
+
+.page-hero::after {
+  content: "";
+  position: absolute;
+  right: -10vw;
+  bottom: -24vw;
+  width: 38vw;
+  height: 38vw;
+  border: 1px solid rgba(152, 30, 50, .10);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.page-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.page-hero h1 {
+  max-width: 900px;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3rem, 6vw, 5.8rem);
+  line-height: 1;
+  letter-spacing: -.055em;
+}
+
+.page-hero p:last-child {
+  max-width: 760px;
+  margin: 26px 0 0;
+  color: var(--muted);
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+}
+
+.section-links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.section-link-card {
+  min-height: 230px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: var(--ink);
+  background: white;
+  box-shadow: 0 15px 50px rgba(23, 32, 42, .055);
+  text-decoration: none;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+.section-link-card:hover {
+  color: var(--ink);
+  border-color: rgba(152, 30, 50, .35);
+  box-shadow: var(--shadow);
+  transform: translateY(-5px);
+}
+
+.section-link-card > span {
+  color: var(--accent);
+  font-size: .78rem;
+  font-weight: 850;
+  letter-spacing: .12em;
+}
+
+.section-link-card h3 {
+  margin: 35px 0 10px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.8rem;
+  line-height: 1.1;
+}
+
+.section-link-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+@media (max-width: 960px) {
+  .section-links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 780px) {
+  .site-nav a[aria-current="page"],
+  .site-nav a.active {
+    color: var(--accent);
+    background: var(--accent-soft);
+  }
+}
+
+@media (max-width: 560px) {
+  .page-hero {
+    padding: 70px 0 58px;
+  }
+
+  .page-hero h1 {
+    font-size: clamp(2.7rem, 14vw, 4rem);
+  }
+
+  .section-links {
+    grid-template-columns: 1fr;
+  }
+
+  .section-link-card {
+    min-height: 200px;
+  }
+}

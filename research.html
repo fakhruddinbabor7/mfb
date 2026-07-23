@@ -1,0 +1,125 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="theme-color" content="#981e32">
+      <meta name="description" content="Research projects of Mohammad Fakhruddin Babar in real-time systems, cybersecurity, trusted AI, and cyber-physical systems.">
+      <meta name="author" content="Mohammad Fakhruddin Babar">
+      <link rel="canonical" href="https://fakhruddinbabor7.github.io/mfb/research.html">
+      <title>Research | Mohammad Fakhruddin Babar</title>
+      <link rel="icon" href="favicon.png" type="image/png">
+      <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="pages.css">
+    </head>
+    <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header" id="top">
+  <div class="nav-wrap container">
+    <a class="brand" href="index.html" aria-label="Mohammad Fakhruddin Babar home">
+      <span class="brand-mark">MFB</span>
+      <span class="brand-name">Fakhruddin Babar</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="research.html" aria-current="page" class="active">Research</a>
+  <a href="publications.html">Publications</a>
+  <a href="experience.html">Experience</a>
+  <a href="news.html">News</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+      <main id="main">
+    <!-- Edit research projects in this file. -->
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">Research</p>
+    <h1>Secure and predictable computing systems.</h1>
+    <p>My research connects real-time systems, cybersecurity, cyber-physical systems, trustworthy AI, timing-channel defenses, and vulnerability prioritization.</p>
+  </div>
+</section>
+
+<section class="section-pad">
+  <div class="container">
+    <div class="section-heading centered reveal">
+      <p class="eyebrow">Projects</p>
+      <h2>Selected research themes</h2>
+      <p>Security mechanisms are most useful when they respect timing, resource, and deployment constraints.</p>
+    </div>
+
+    <div class="project-grid">
+      <article class="project-card project-featured reveal">
+        <div class="project-image"><img src="assets/images/project-trustzone.webp" alt="Diagram illustrating trusted real-time neural inference" loading="lazy"></div>
+        <div class="project-content">
+          <p class="project-kicker">Trusted execution · Real-time AI</p>
+          <h3>Confidential neural inference with timing guarantees</h3>
+          <p>Scheduling and task-fusion methods for executing DNN workloads inside Arm TrustZone while controlling secure-memory and context-switch overheads.</p>
+          <ul class="impact-list">
+            <li>Analytical schedulability models</li>
+            <li>Secure-memory-aware deployment</li>
+            <li>Reduced TEE context switches</li>
+          </ul>
+          <a class="text-link" href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ECRTS.2024.13" target="_blank" rel="noopener">Read the ECRTS paper <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-image"><img src="assets/images/project-timing.webp" alt="Timing pattern diagram for real-time task security research" loading="lazy"></div>
+        <div class="project-content">
+          <p class="project-kicker">Timing security</p>
+          <h3>Covert channels and information leakage</h3>
+          <p>Models and statistical methods that reveal how low-priority tasks can infer sensitive execution patterns from fixed-priority schedules.</p>
+          <a class="text-link" href="https://ieeexplore.ieee.org/abstract/document/10551375" target="_blank" rel="noopener">View the ISORC paper <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-image"><img src="assets/images/project-survey.webp" alt="Overview of trusted deep neural execution research" loading="lazy"></div>
+        <div class="project-content">
+          <p class="project-kicker">Privacy · Scheduling · Control</p>
+          <h3>Privacy-aware randomized scheduling</h3>
+          <p>Studying how differential privacy and schedule randomization affect attack opportunities, deadline guarantees, and control-system stability.</p>
+          <span class="paper-status">EMSOFT 2026 · Accepted</span>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-image"><img src="assets/images/project-embedded-ai.webp" alt="Performance comparison for language models on embedded devices" loading="lazy"></div>
+        <div class="project-content">
+          <p class="project-kicker">Embedded AI</p>
+          <h3>Language models on resource-limited devices</h3>
+          <p>Benchmarking inference time, memory use, energy consumption, and accuracy across embedded platforms and model configurations.</p>
+          <a class="text-link" href="https://dl.acm.org/doi/abs/10.1145/3629526.3645054" target="_blank" rel="noopener">View the ICPE paper <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-content project-content-only">
+          <p class="project-kicker">Cyber defense · Machine learning</p>
+          <h3>Learning-based vulnerability prioritization</h3>
+          <p>Combining exploitability, severity, weakness, and semantic signals to help defenders rank CVEs and focus remediation resources.</p>
+          <div class="tag-row"><span>CVSS</span><span>EPSS</span><span>KEV</span><span>Learning to Rank</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+      </main>
+    <footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> Mohammad Fakhruddin Babar</p>
+    <a href="#top">Back to top ↑</a>
+  </div>
+</footer>
+<script src="script.js"></script>
+
+    </body>
+    </html>
