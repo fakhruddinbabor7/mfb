@@ -1,0 +1,83 @@
+:root {
+  --accent: #981e32;
+  --ink: #1e2329;
+  --muted: #60676f;
+  --line: #e5e1dc;
+  --soft: #f7f5f2;
+  --wrap: 1080px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background: #fff;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+.wrap { width: min(calc(100% - 40px), var(--wrap)); margin-inline: auto; }
+.skip-link { position: absolute; left: 12px; top: -60px; padding: 8px 12px; background: var(--ink); color: #fff; }
+.skip-link:focus { top: 12px; }
+:focus-visible { outline: 3px solid #d9a6b0; outline-offset: 3px; }
+
+.site-header { border-bottom: 1px solid var(--line); background: #fff; }
+.header-inner { min-height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.name { font-weight: 750; text-decoration: none; }
+nav { display: flex; gap: 24px; }
+nav a { color: var(--muted); font-size: .92rem; font-weight: 650; text-decoration: none; }
+nav a:hover, nav a[aria-current="page"] { color: var(--accent); }
+
+.page-intro { max-width: 830px; padding: 92px 0 74px; }
+.label, .topic { color: var(--accent); font-size: .75rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.page-intro h1 { margin: 10px 0 22px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.55rem, 6vw, 4.8rem); line-height: 1.02; letter-spacing: -.045em; }
+.intro { max-width: 760px; margin: 0; color: var(--muted); font-size: 1.12rem; }
+
+.research-list { border-top: 1px solid var(--line); }
+.research-item {
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr) minmax(220px, 330px);
+  gap: 34px;
+  align-items: start;
+  padding: 60px 0;
+  border-bottom: 1px solid var(--line);
+}
+.number { padding-top: 6px; color: var(--accent); font-size: .8rem; font-weight: 800; }
+.content.wide { grid-column: 2 / 4; max-width: 760px; }
+.topic { margin: 0 0 10px; }
+.content h2 { margin: 0 0 15px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.8rem, 3.5vw, 2.65rem); line-height: 1.12; letter-spacing: -.025em; }
+.content > p:not(.topic):not(.meta):not(.status) { max-width: 690px; margin: 0 0 15px; color: #454b52; }
+.meta { margin: 18px 0 9px; color: var(--muted); font-size: .86rem; }
+.text-link { color: var(--accent); font-size: .92rem; font-weight: 750; text-decoration: none; }
+.text-link:hover { text-decoration: underline; text-underline-offset: 4px; }
+.status { display: inline-block; margin: 12px 0 0; color: var(--accent); font-size: .86rem; font-weight: 750; }
+.project-image { width: 100%; aspect-ratio: 16 / 10; object-fit: contain; padding: 14px; border: 1px solid var(--line); background: var(--soft); }
+
+footer { background: var(--soft); }
+.footer-inner { min-height: 88px; display: flex; align-items: center; justify-content: space-between; gap: 20px; color: var(--muted); font-size: .9rem; }
+.footer-inner p { margin: 0; }
+.footer-inner a { color: var(--ink); text-decoration: none; }
+
+@media (max-width: 780px) {
+  .header-inner { align-items: flex-start; padding: 17px 0; flex-direction: column; gap: 10px; }
+  nav { width: 100%; gap: 16px; overflow-x: auto; padding-bottom: 3px; }
+  .page-intro { padding: 65px 0 50px; }
+  .research-item { grid-template-columns: 34px 1fr; gap: 16px 20px; padding: 45px 0; }
+  .content, .content.wide { grid-column: 2; }
+  .project-image { grid-column: 2; max-width: 520px; margin-top: 8px; }
+}
+
+@media (max-width: 480px) {
+  .wrap { width: min(calc(100% - 28px), var(--wrap)); }
+  .name { font-size: .95rem; }
+  nav a { font-size: .84rem; }
+  .page-intro h1 { font-size: 2.6rem; }
+  .research-item { grid-template-columns: 1fr; }
+  .number, .content, .content.wide, .project-image { grid-column: 1; }
+  .number { padding: 0; }
+  .project-image { margin-top: 5px; }
+  .footer-inner { padding: 22px 0; align-items: flex-start; flex-direction: column; }
+}
