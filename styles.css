@@ -42,7 +42,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .hero::after { content: ""; position: absolute; inset: auto -8vw -18vw auto; width: 35vw; height: 35vw; border-radius: 50%; border: 1px solid rgba(152,30,50,.12); box-shadow: 0 0 0 5vw rgba(152,30,50,.025), 0 0 0 10vw rgba(152,30,50,.02); pointer-events: none; }
 .hero-grid { display: grid; grid-template-columns: 1.25fr .75fr; gap: clamp(50px, 8vw, 110px); align-items: center; }
 .eyebrow { margin: 0 0 13px; color: var(--accent); font-size: .78rem; font-weight: 800; text-transform: uppercase; letter-spacing: .16em; }
-.hero h1 { margin: 0; max-width: 860px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(3rem, 6vw, 6rem); line-height: .98; letter-spacing: -.055em; font-weight: 700; }
+.hero h1 { margin: 0; max-width: 860px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2rem, 4vw, 4rem); line-height: .98; letter-spacing: -.055em; font-weight: 700; }
 .hero-lede { max-width: 760px; margin: 30px 0 0; color: var(--muted); font-size: clamp(1.05rem, 1.8vw, 1.28rem); }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
 .button { display: inline-flex; justify-content: center; align-items: center; min-height: 50px; padding: 12px 20px; border-radius: 999px; font-weight: 760; text-decoration: none; transition: transform .2s ease, box-shadow .2s ease, background .2s ease; }
