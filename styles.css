@@ -248,3 +248,11 @@ button, a { -webkit-tap-highlight-color: transparent; }
     height: 190px;
   }
 }
+/* Make large headings slightly smaller */
+.hero h1 {
+  font-size: clamp(2.5rem, 5vw, 4.8rem);
+}
+
+.section-heading h2 {
+  font-size: clamp(2rem, 3.8vw, 3.5rem);
+}
