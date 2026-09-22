@@ -106,6 +106,36 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .more-publications .publication-item { padding-left: 18px; }
 .publication-cta { margin-top: 34px; }
 
+/* Publications page: light background treatment */
+.section-light .publication-list {
+  border-top-color: var(--line);
+}
+
+.section-light .publication-item {
+  border-bottom-color: var(--line);
+}
+
+.section-light .pub-year {
+  color: var(--muted);
+}
+
+.section-light .venue {
+  color: var(--accent);
+}
+
+.section-light .publication-item p {
+  color: var(--muted);
+}
+
+.section-light .publication-item a {
+  color: var(--accent);
+}
+
+.section-light .publication-item a:hover {
+  color: var(--accent-dark);
+}
+
+
 .experience-layout { margin-bottom: 70px; }
 .timeline { position: relative; }
 .timeline::before { content: ""; position: absolute; left: 104px; top: 8px; bottom: 8px; width: 1px; background: var(--line); }
